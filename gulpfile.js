@@ -19,8 +19,13 @@ gulp.task('serve', ['stylus'], function () {
     server: "./"
   });
 
-  gulp.watch("./sources/styl/*.styl", ['stylus']);
-  gulp.watch("./sources/haml/*.haml", ['haml']);
+  gulp.watch("./sources/styl/*.styl", function () {
+    gulp.run('stylus');
+  });
+
+  gulp.watch("./sources/haml/*.haml", function () {
+    gulp.run('haml');
+  });
 });
 
 gulp.task('stylus', function () {

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("../fonts/Helvetica-Bold.otf") format('opentype'), url("../fonts/Helvetica-Bold.ttf") format('truetype');
+}
+.top-navigation {
+  padding: 28px 30px;
+  height: 80px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 4px 0;
+  box-shadow: 0 2px 4px 0;
+}
+.menu-open {
+  display: inline-block;
+  cursor: pointer;
+  zoom: 1;
+}
+.menu-open:before,
+.menu-open:after {
+  content: "";
+  display: table;
+}
+.menu-open:after {
+  clear: both;
+}
+.menu-open__hamburger {
+  float: left;
+  width: 30px;
+}
+.menu-open__hamburger__bar {
+  display: block;
+  margin-bottom: 4px;
+  height: 5px;
+  background: #030303;
+}
+.menu-open__label {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: "Helvetica Bold";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.lng-switch {
+  float: right;
+}
