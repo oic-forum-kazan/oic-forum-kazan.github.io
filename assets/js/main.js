@@ -9,3 +9,13 @@ function showMenu(){
 function closeMenu() {
   document.getElementById('overlaymenu').style.width = '0%';
 }
+
+
+$(function () {
+  var photoSwipe = new Swiper('.whocan-block__content__slides', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    direction: 'vertical',
+    simulateTouch: false
+  });
+});

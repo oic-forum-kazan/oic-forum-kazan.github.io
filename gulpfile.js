@@ -35,9 +35,9 @@ gulp.task('stylus', function () {
       use: nib()
     }))
     .pipe(gulp.dest("./assets/styles"))
-    .pipe(cssLint())
+    // .pipe(cssLint())
     // .pipe(cssLint('csslintrc.json'))
-    .pipe(cssLint.formatter())
+    // .pipe(cssLint.formatter())
     .pipe(reload({stream: true}));
 });
 

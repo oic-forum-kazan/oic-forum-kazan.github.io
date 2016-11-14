@@ -54,8 +54,22 @@
       .header-block__button
         .button.button--join УЧАСТВОВАТЬ
 
-    %header.header-block#whocan{ style: "background: #fff" }
-      who can
+    %header.whocan-block#whocan{ style: "background: green"}
+      .whocan-block__wrapper
+        .whocan-block__video
+          .
+        .whocan-block__content
+          .whocan-block__content__header
+            Кто может участвовать?
+          .swiper-container.whocan-block__content__slides
+            .swiper-wrapper
+              .swiper-slide
+                Авторы старт ап проектов в сфере IT от 18 до 35 лет
+              .swiper-slide
+                Участники с портфолио, в посике инвестиций до $30 000
+              .swiper-slide
+                Заинтересованые в поиске партнеров и инвесторов для реализации проекта в странах ОИС или России
+            .swiper-pagination
 
     %header.header-block#firstpart{ style: "background: #f0f" }
       first part
@@ -78,15 +92,6 @@
         .select-participants-block__step
           .select-participants-block__step__counter 3
           .select-participants-block__step__text Отбор проектов экспертами, приглашение от инвесторов на форум
-
-    %header.header-block#programm{ style: "background: #fff" }
-      programm
-
-    %header.header-block#partnership{ style: "background: #f41" }
-      partnership
-
-    %header.header-block#contactus{ style: "background: #ff1" }
-      contactus
 
     .overlay-menu#overlaymenu
       .overlay-menu__closebtn{ onclick: "closeMenu()" }
