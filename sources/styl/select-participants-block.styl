@@ -1,0 +1,59 @@
+.select-participants-block
+  padding-top: 130px
+  background: none
+
+  &__header
+    color: $black
+    font-size: 64px
+    line-height: 86px
+    font-family: "Helvetica Bold"
+
+  &__descr
+    margin-top: 20px
+    width: 638px
+    color: $greyish-brown
+    font-size: 18px
+    line-height: 27px
+
+  &__steps
+    margin-top: 5px
+    width: 418px
+
+  &__step
+    position: relative
+    margin-top: 30px
+    clearfix()
+
+    &__counter
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      float: left
+      width: 60px
+      height: 60px
+      background: $black
+      border-radius(30px)
+      text-align: center
+      font-size: 36px
+      line-height: 60px
+      font-family: "Helvetica Bold"
+
+    &__text
+      float: left
+      width: 338px
+      margin-left: 80px
+      font-family: Helvetica
+      font-size: 18px
+      line-height: 27px
+      color: $greyish-brown
+
+  &__header,
+  &__descr
+    text-align: center
+
+  &__header,
+  &__descr,
+  &__steps
+    position: relative
+    left: 50%
+    transform: translateX(-50%)

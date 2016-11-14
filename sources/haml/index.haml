@@ -1,0 +1,150 @@
+!!! 5
+%html
+  %head
+    %title SECOND KAZAN OIC
+    %link{ rel: "stylesheet", type: "text/css", href:"vendor/bootstrap/css/bootstrap.min.css" }
+    %link{ rel: "stylesheet", type: "text/css", href:"vendor/creative/creative.css" }
+    %link{ rel: "stylesheet", type: "text/css", href:"vendor/swiper/swiper.min.css" }
+    %link{ rel: "stylesheet", type: "text/css", href:"assets/styles/main.css" }
+
+    %script{ src: "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" }
+    %script{ src: "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" }
+
+  %body
+    %nav.navbar.navbar-fixed-top.top-navigation.top-navigation--main{ role: "navigation" }
+      .container-fluid
+        .menu-open{ onclick: "showMenu()" }
+          .menu-open__hamburger
+            %span.menu-open__hamburger__bar
+            %span.menu-open__hamburger__bar
+            %span.menu-open__hamburger__bar
+
+          .menu-open__label
+            МЕНЮ
+
+        .lng-switch
+          .dropdown
+            %a.dropdown-toggle{ href: "#", data-toggle: "dropdown" }
+              Русский
+              %b.caret
+
+            %ul.dropdown-menu
+              %li
+                %a{ href: "#" } Русский
+              %li
+                %a{ href: "#" } English
+
+
+    %header.header-block#main
+      .header-block__header
+        III Казанский
+        %br
+        форум молодых
+        %br
+        предпринимателей
+        %br
+        стран ОИС
+
+      .header-block__event
+        .header-block__event__date
+          15-20 Мая, 2017
+        .header-block__event__location
+          Казань, Татарстан, Россия
+
+      .header-block__button
+        .button.button--join УЧАСТВОВАТЬ
+
+    %header.whocan-block#whocan
+      .whocan-block__wrapper
+        .whocan-block__video
+        .whocan-block__content
+          .whocan-block__content__header
+            Кто может участвовать?
+          .swiper-container.whocan-block__content__slides
+            .swiper-wrapper
+              .swiper-slide
+                Авторы старт ап проектов в сфере IT от 18 до 35 лет
+              .swiper-slide
+                Участники с портфолио, в посике инвестиций до $30 000
+              .swiper-slide
+                Заинтересованые в поиске партнеров и инвесторов для реализации проекта в странах ОИС или России
+            .swiper-pagination
+
+    %header.programm-block#program-p1
+      .programm-block__wrapper
+        .swiper-container.programm-block__photos.programm-block__photos-p1
+          .swiper-wrapper
+            .swiper-slide{ style: "background: red" } 1
+            .swiper-slide{ style: "background: green" } 2
+            .swiper-slide{ style: "background: blue" } 3
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+        .programm-block__content
+          .programm-block__content__date 15-17 мая
+          .programm-block__content__part ПЕРВЫЙ ЭТАП ПРОГРАММЫ
+          .programm-block__content__header
+            OIC start up
+            %br
+            HUB platform
+          .programm-block__content__descr По итогам отбора на площадке OIC Startup platform лучшие 50 старт-ап проектов приглашаются принять участие в III Казанском форуме молодых предпринимателей стран ОИС, где Вас ожидает насыщенная программа, которая подготовит Вас к личной встрече с инвестором и презентации старт-апа на питч-сессии IT START-UP EXPO.
+
+    %header.programm-block#program-p2
+      .programm-block__wrapper
+        .swiper-container.programm-block__photos.programm-block__photos-p2
+          .swiper-wrapper
+            .swiper-slide{ style: "background: red" } 1
+            .swiper-slide{ style: "background: green" } 2
+            .swiper-slide{ style: "background: blue" } 3
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+        .programm-block__content
+          .programm-block__content__date 18-19 мая
+          .programm-block__content__part ВТОРОЙ ЭТАП ПРОГРАММЫ
+          .programm-block__content__header
+            YOUTH
+            %br
+            ENTREPRENEURSHIP
+            %br
+            FORUM
+          .programm-block__content__descr
+            IT START-UP EXPO – это инвестиционная сессия, которая является заключительным этапом III Казанского форума молодых предпринимателей стран ОИС и проходит в рамках IX Международного экономического саммита России и стран ОИС.
+            %br
+            %br
+            По итогам инвестиционной сессии заключаются соглашения между авторами старт-ап проектов и заинтересованными инвесторами.
+
+
+    %header.select-participants-block#projectpick
+      .select-participants-block__header
+        Отбор участников
+      .select-participants-block__descr
+        Программа начинается с регистрации на площадке OIC Startup platform, где после технического отбора у проекта появляется ментор, который помогает предоставить стартап инвестору на онлайн платформе.
+      .select-participants-block__steps
+        .select-participants-block__step
+          .select-participants-block__step__counter 1
+          .select-participants-block__step__text Регистрация старт-ап проекта на платформе
+        .select-participants-block__step
+          .select-participants-block__step__counter 2
+          .select-participants-block__step__text Прохождение технического отбора, взаимодействие с персональным ментором
+        .select-participants-block__step
+          .select-participants-block__step__counter 3
+          .select-participants-block__step__text Отбор проектов экспертами, приглашение от инвесторов на форум
+
+    .overlay-menu#overlaymenu
+      .overlay-menu__closebtn{ onclick: "closeMenu()" }
+      .overlay-menu__content
+        %a.overlay-menu__content__link{ href: "#" } Главная
+        %a.overlay-menu__content__link{ href: "#" } О нас
+        %a.overlay-menu__content__link{ href: "#" } Проект
+        %a.overlay-menu__content__link{ href: "#" } Тренеры
+        %a.overlay-menu__content__link{ href: "#" } Инвесторы
+        %a.overlay-menu__content__link{ href: "#" } Партнеры
+        %a.overlay-menu__content__link{ href: "#" } Контакты
+
+
+    %script{src: "/vendor/jquery/jquery.min.js"}
+    %script{src: "/vendor/bootstrap/js/bootstrap.min.js"}
+    %script{src: "/vendor/swiper/swiper.min.js"}
+    %script{src: "/assets/js/main.js"}
+
