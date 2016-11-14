@@ -10,7 +10,7 @@
     %script{ src: "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" }
 
   %body
-    %nav.navbar.navbar-fixed-top.top-navigation{ role: "navigation" }
+    %nav.navbar.navbar-fixed-top.top-navigation.top-navigation--main{ role: "navigation" }
       .container-fluid
         .menu-open
           .menu-open__hamburger
@@ -19,7 +19,7 @@
             %span.menu-open__hamburger__bar
 
           .menu-open__label
-            меню
+            МЕНЮ
 
         .lng-switch
           .dropdown
@@ -34,8 +34,45 @@
                 %a{ href: "#" } English
 
 
-    %header
-      111
+    %header.header-block#main
+      .header-block__header
+        III Казанский
+        %br
+        форум молодых
+        %br
+        предпринимателей
+        %br
+        стран ОИС
+
+      .header-block__event
+        .header-block__event__date
+          15-20 Мая, 2017
+        .header-block__event__location
+          Казань, Татарстан, Россия
+
+      .header-block__button
+        .button.button--join УЧАСТВОВАТЬ
+
+    %header.header-block#whocan{ style: "background: #fff" }
+      who can
+
+    %header.header-block#firstpart{ style: "background: #f0f" }
+      first part
+
+    %header.header-block#secondpart{ style: "background: #fff" }
+      second part
+
+    %header.header-block#projectpick{ style: "background: #0ff" }
+      project pick
+
+    %header.header-block#programm{ style: "background: #fff" }
+      programm
+
+    %header.header-block#partnership{ style: "background: #f41" }
+      partnership
+
+    %header.header-block#contactus{ style: "background: #ff1" }
+      contactus
 
 
     %script{src: "/vendor/jquery/jquery.min.js"}
