@@ -18,4 +18,12 @@ $(function () {
     direction: 'vertical',
     simulateTouch: false
   });
+
+  var programm1Swiper = new Swiper('.programm-block__photos', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    simulateTouch: false
+  });
 });

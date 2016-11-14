@@ -54,10 +54,9 @@
       .header-block__button
         .button.button--join УЧАСТВОВАТЬ
 
-    %header.whocan-block#whocan{ style: "background: green"}
+    %header.whocan-block#whocan
       .whocan-block__wrapper
         .whocan-block__video
-          .
         .whocan-block__content
           .whocan-block__content__header
             Кто может участвовать?
@@ -71,11 +70,50 @@
                 Заинтересованые в поиске партнеров и инвесторов для реализации проекта в странах ОИС или России
             .swiper-pagination
 
-    %header.header-block#firstpart{ style: "background: #f0f" }
-      first part
+    %header.programm-block#program-p1
+      .programm-block__wrapper
+        .swiper-container.programm-block__photos.programm-block__photos-p1
+          .swiper-wrapper
+            .swiper-slide{ style: "background: red" } 1
+            .swiper-slide{ style: "background: green" } 2
+            .swiper-slide{ style: "background: blue" } 3
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+        .programm-block__content
+          .programm-block__content__date 15-17 мая
+          .programm-block__content__part ПЕРВЫЙ ЭТАП ПРОГРАММЫ
+          .programm-block__content__header
+            OIC start up
+            %br
+            HUB platform
+          .programm-block__content__descr По итогам отбора на площадке OIC Startup platform лучшие 50 старт-ап проектов приглашаются принять участие в III Казанском форуме молодых предпринимателей стран ОИС, где Вас ожидает насыщенная программа, которая подготовит Вас к личной встрече с инвестором и презентации старт-апа на питч-сессии IT START-UP EXPO.
 
-    %header.header-block#secondpart{ style: "background: #fff" }
-      second part
+    %header.programm-block#program-p2
+      .programm-block__wrapper
+        .swiper-container.programm-block__photos.programm-block__photos-p2
+          .swiper-wrapper
+            .swiper-slide{ style: "background: red" } 1
+            .swiper-slide{ style: "background: green" } 2
+            .swiper-slide{ style: "background: blue" } 3
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+        .programm-block__content
+          .programm-block__content__date 18-19 мая
+          .programm-block__content__part ВТОРОЙ ЭТАП ПРОГРАММЫ
+          .programm-block__content__header
+            YOUTH
+            %br
+            ENTREPRENEURSHIP
+            %br
+            FORUM
+          .programm-block__content__descr
+            IT START-UP EXPO – это инвестиционная сессия, которая является заключительным этапом III Казанского форума молодых предпринимателей стран ОИС и проходит в рамках IX Международного экономического саммита России и стран ОИС.
+            %br
+            %br
+            По итогам инвестиционной сессии заключаются соглашения между авторами старт-ап проектов и заинтересованными инвесторами.
+
 
     %header.select-participants-block#projectpick
       .select-participants-block__header
