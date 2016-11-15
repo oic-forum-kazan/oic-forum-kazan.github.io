@@ -1,17 +1,43 @@
 header
   text-align: left
 
-
 .swiper-pagination-bullet
-  width: 20px
-  height: 20px
-  text-align: center
-  line-height: 20px
-  font-size: 12px
-  color:#000
+  width: 10px
+  height: 10px
+  background: $white
   opacity: 1
-  background: rgba(0,0,0,0.2)
 
 .swiper-pagination-bullet-active
-  color:#fff
-  background: #007aff
+  background: $orange-yellow
+
+
+.swiper-pagination-bullet-numeric
+  width: 30px
+  height: 30px
+  background: transparent
+  color: $black
+  text-align: center
+  line-height: @height
+  font-size: 18px
+
+.swiper-pagination-bullet-numeric.swiper-pagination-bullet-active
+  background: $black
+  color: $white
+
+
+
+.swiper-button-next,
+.swiper-button-prev
+  top: auto
+  bottom: 0
+  background-size: 87px 41px
+
+.swiper-button-next
+  right: 0
+
+.swiper-button-prev
+  left: 0
+
+.swiper-container
+  height: 100%
+  width: 100%
