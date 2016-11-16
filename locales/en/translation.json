@@ -1,169 +1,43 @@
 {
-  "header": {
-    "h1_1" : "SECOND KAZAN OIC",
-    "h1_2" : "YOUTH ENTREPRENEURSHIP FORUM",
-    "h2_1"  : "15-21 May, 2016",
-    "h2_2"  : "Kazan, Russia",
-    "button" : "Participate"
-  },
-  "services": {
-    "h1"  : "Who can participate?",
-    "li_1": "Young entrepreneurs                  ",
-    "p_1" : "Team of 2 representatives with the project of IT start-up. Age of participants is between 18 - 35 years.",
-    "li_2": "Project requirements         ",
-    "p_2" : "Project prototype availability. Project road map availability. Start-up project in IT.",
-    "li_3": "Interestes in business and IT industry",
-    "p_3" : "A participant is to have interest in the searching of international and Russian partners, investments for start-up."
-  },
-  "programme": {
-    "h1": "Program content",
-    "p" : "Program includes 2 parts"
-  },
-  "portfolio": {
-    "h1_1": "YOUTH ENTREPRENEURSHIP FORUM",
-    "p_1" : "YOUTH ENTREPRENEURSHIP FORUM with the participation of 100-120 people (50-60 projects). The aim is the effective cooperation between the participants to find international partners, the establishment of business contacts between Russian and international business communities, development in such areas as personal growth, product presentation and project management as well as preparation for the final project demonstration within the \"Start-up EXPO\".",
-    "h1_2": "Start-up EXPO",
-    "p_2" : "\"Start-up EXPO\" consists of 2-hour session in the framework of the KAZANSUMMIT, where the best 15 projects are to be presented to investors. Projects are selected by the experts from those who applied for \"Start-up EXPO\"."
-  },
-  "contact": {
-    "h2"     : "Want to participate?",
-    "span"   : "Click on the button and full the application form to join this event.",
-    "button" : "Participate"
-  },
- 	"sunday": {
-		"day": "15.05.2016, Sunday",
-		"descript_1": "Arrivals; Registration at «Suleiman Palace» Hotel",
-		"time_1": "All day",
-		"descript_2": "Lunch at the «Tugan Avilim» Restaurant",
-		"time_2": "14.00-15.00",
-		"descript_3": "Excursion in IT-park",
-		"time_3": "15.00-16.00",
-		"descript_4": "Excursion to Innopolis City",
-		"time_4": "16.00-21.00"
+	"join": "Join",
+	"menulabel": "MENU",
+	"menu": {
+		"home":        "HOME",
+		"about":       "ABOUT US",
+		"project":     "PROJECT",
+		"trainers":    "TRAINERS",
+		"investors":   "INVERTORS",
+		"partnership": "PARTNERSHIP",
+		"contacts":    "CONTACTS"
 	},
-	"monday": {
-		"day": "16.05.2016, Monday",
-		"descript_1": "Breakfast",
-		"time_1": "07.00-08.00",
-		"descript_2": "Presentation of the Forum’s Agenda",
-		"time_2": "09.00-09.30",
-		"descript_3": "Opening Ceremony of the Forum",
-		"time_3": "09.30-10.00",
-		"descript_4": "Networking Session – Introduction, presentation of participants",
-		"time_4": "10.15-12.00",
-		"descript_5": "Coffee Break",
-		"time_5": "12.00-12.30",
-		"descript_6": "Networking Session – Introduction, presentation of participants",
-		"time_6": "12.30-13.50",
-		"descript_7": "Lunch",
-		"time_7": "14.00-15.00",
-		"descript_8": "Educational Session – “Customer Development”",
-		"time_8": "15.30-17.00",
-		"descript_9": "Coffee Break",
-		"time_9": "17.00-17.30",
-		"descript_10": "Educational Session – “Customer Development”",
-		"time_10": "17.30-19.00",
-		"descript_11": "Dinner and cultural programme “Welcome to Tatarstan!” «Tugan Avilim» Restaurant",
-		"time_11": "20.00-22.00"
+	"main": {
+		"header": "3rd Kazan\nOIC Youth\nEntrepreneurship\nForum",
+		"date": "15-20 May, 2017",
+		"location": "Kazan, Republic of Tatarstan, Russia"
 	},
-	"tuesday": {
-		"day": "17.05.2016, Tuesday",
-		"descript_1": "Breakfast",
-		"time_1": "08.00-09.00",
-		"descript_2": "Educational session –  “The Startup Vibe A Joint Digital Venture”  –  Part I",
-		"time_2": "10.00-11.15",
-		"descript_3": "Coffee Break",
-		"time_3": "11.15-11.30",
-		"descript_4": "Educational session – “When Borders Lose Meaning”Cross-national projects”  –  Part II",
-		"time_4": "11.30-13.00",
-		"descript_5": "Lunch",
-		"time_5": "13.00-14.00",
-		"descript_6": "Educational Session – “How do investors choose projects?”  –  Part III",
-		"time_6": "14.30-16.00",
-		"descript_7": "Coffee Break",
-		"time_7": "16.00-16.30",
-		"descript_8": "Educational Session – “Importance of pivots on example of existing start-up projects”",
-		"time_8": "16.30-18.00",
-		"descript_9": "Dinner",
-		"time_9": "19.00-20.00",
-		"descript_10": "Meeting with the the IT-Park residents  and representatives of the IT companies of Kazan",
-		"time_10": "20.00-22.00"
+	"participate": {
+		"header": "Who can participate?",
+		"slide1": "You have an IT start-up\nYour age is between 18-35 years",
+		"slide2": "Your start-up has a prototype\nRequired amount of investments is up to 30 000 USD",
+		"slide3": "You are interested in the implementation of your start-up in OIC countries and Russia"
 	},
-	"wednesday": {
-		"day": "18.05.2016, Wednesday",
-		"descript_1": "Breakfast",
-		"time_1": "08.00-09.00",
-		"descript_2": "Educational Session - “How technology is revolutionizing education”",
-		"time_2": "10.00-11.15",
-		"descript_3": "Coffee Break",
-		"time_3": "11.15-11.30",
-		"descript_4": "Educational Session - “PR for a successful technology company” / Educational Session - “Key financial indicators for attracting investors”",
-		"time_4": "11.30-13.00",
-		"descript_5": "lunch",
-		"time_5": "13.00-14.00",
-		"descript_6": "Educational Session - “The significance  of Technical  Innovation for startups”",
-		"time_6": "14.30-16.00",
-		"descript_7": "Kazan City Tour",
-		"time_7": "16.00-18.30",
-		"descript_8": "Dinner in “Tugan avilim”Restaurant",
-		"time_8": "19.00-20.00",
-		"descript_9": "Cultural Evening “Traditions of my country” / Presentation of the “Istanbul – OIC Youth Capital 2016”",
-		"time_9": "20.00-22.30"
+	"selection": {
+		"header": "Selection Procedure",
+		"text": "In order to take part in the event you must register on OIC Startup Platform. After registering your start-up, revision and technical selection, you will be assigned to a mentor who will help to refine your projects in order to present them online to the investor. Selection: ",
+		"list": {
+			"first": "Registration of the start-up on the platform;",
+			"second": "Technical selection and interaction with the assigned mentor;",
+			"third": "Choosing the best projects and invitation by investors to attend the forum in Kazan."
+		}
 	},
-	"thursday": {
-		"day": "19.05.2016, Thursday",
-		"descript_1": "Breakfast",
-		"time_1": "08.00-09.00",
-		"descript_2": "Educational Session “Presentation skills”",
-		"time_2": "09.30-10.30",
-		"descript_3": "Presentation and Analysis of the Projects. Approval of Top-15 project list for the “IT START-UP EXPO”",
-		"time_3": "11.00-12.30",
-		"descript_4": "Lunch",
-		"time_4": "12.30-13.30",
-		"descript_5": "Transfer to the Kazansummit",
-		"time_5": "13.30-14.00",
-		"descript_6": "Welcome of participants on behalf of the Government  of the Republic of Tatarstan and the KazanSummit OC / Presentation and Analysis of the Projects. Approval of Top-15 project list for the “IT START-UP EXPO” at the Korston Hotel,  “Tolstoy” Hall",
-		"time_6": "14.00-18.00",
-		"descript_7": "Dinner",
-		"time_7": "18.00-19.00",
-		"descript_8": "Results Announcement  and Analysis of the Presentations",
-		"time_8": "19.00-20.00",
-		"descript_9": "Night Kazan City Tour",
-		"time_9": "20.00-21.00"
+	"firststage": {
+		"date": "15-17 May, 2017",
+		"stage": "FIRST STAGE",
+		"text": "After selection on the OIC Startup Platform top 50 start-ups are invited to take part in the 3rd Kazan OIC Youth Entrepreneurship Forum, where you will find a rich programme that will prepare you for a personal meeting with the investor and the start-up presentation on the pitch session at IT START-UP EXPO."
 	},
-	"friday": {
-		"day": "20.05.2016, Friday",
-		"descript_1": "Breakfast",
-		"time_1": "07.00-08.00",
-		"descript_2": "Transfer to Kazansummit",
-		"time_2": "08.00-09.00",
-		"descript_3": "KazanSummit PlenarySession: “ New Architecture of the world economy: prospects of the OIC Financial industry in the Russian Federation”",
-		"time_3": "10.00-11.30",
-		"descript_4": "Lunch break(Jum’ah)",
-		"time_4": "11.30-12.45",
-		"descript_5": "Opening of the Investment Session “IT START-UP EXPO” with the participation of President of the Republic of Tatarstan R.N.Minnikhanov, honourable guests and investors. Presentation of the Top-15 Projects of the Forum.",
-		"time_5": "13.00-15.30",
-		"descript_6": "Coffee Break",
-		"time_6": "15.30-16.00",
-		"descript_7": "Investment Session with the participation of investors and honourable guests.Presentation of the Top-15 Projects of the Forum",
-		"time_7": "16.00-17.30",
-		"descript_8": "Closing Ceremony of the Forum",
-		"time_8": "18.00-19.00",
-		"descript_9": "Farewell Dinner at the “Palladium” restaurant",
-		"time_9": "19.00-21.00"
-	},
-	"saturday": {
-		"day": "21.05.2016, Saturday",
-		"descript_1": "Breakfast",
-		"time_1": "07.00-08.00",
-		"descript_2": "Departure of the participants",
-		"time_2": ""
-	},
-  "part" : {
-    "title"         : "Why should I participate?",
-    "p1"            : "Business-contacts in 57 countries",
-    "p2"            : "Meetings with international investors",
-    "p3"            : "Presentation of your project ",
-    "p4"            : "Acceleration of IT projects with participation of leading international experts "
-  }
+	"secondstage": {
+		"date": "18-19 May, 2017",
+		"stage": "SECOND STAGE",
+		"text": "IT START-UP EXPO is an investment session held in the framework of IX International Economic Summit between Russia and OIC countries.\n\nIT START-UP EXPO is the final stage of the 3rd Kazan OIC Youth Entrepreneurship Forum where authors of start-ups make an agreement with interested investors."
+	}
 }

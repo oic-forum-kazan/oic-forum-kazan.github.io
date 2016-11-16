@@ -147,6 +147,43 @@ header {
 .lng-switch {
   display: none;
   float: right;
+  width: 80px;
+  height: 25px;
+}
+.lng-switch__caret {
+  margin-left: 2px;
+  border-top: 7px dashed #fff;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  margin-bottom: 10px;
+}
+.lng-switch__current {
+  width: 50px;
+  height: 25px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+}
+.lng-switch__current--ru {
+  background-image: url("../images/icons/rus.png");
+}
+.lng-switch__current--en {
+  background-image: url("../images/icons/eng.png");
+}
+.lng-switch__lang {
+  margin-top: 2px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+.lng-switch__lang + .lng-switch__lang {
+  border-top: 1px solid #808080;
+}
+.lng-switch .dropdown-menu {
+  width: 50px;
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .header-block {
   padding: 154px 0 40px 110px;
@@ -168,6 +205,7 @@ header {
   line-height: 86px;
   font-family: 'Roboto';
   font-weight: bold;
+  white-space: pre;
 }
 .header-block__event__date,
 .header-block__event__location {
@@ -328,9 +366,11 @@ header {
   line-height: 27px;
   color: #4a4a4a;
 }
-.select-participants-block__header,
-.select-participants-block__descr {
+.select-participants-block__header {
   text-align: center;
+}
+.select-participants-block__descr {
+  text-align: justify;
 }
 .select-participants-block__header,
 .select-participants-block__descr,
@@ -459,6 +499,7 @@ header {
   font-size: 18px;
   line-height: 27px;
   font-family: 'Roboto';
+  white-space: pre-line;
 }
 .gallery__image {
   background-position: center center;

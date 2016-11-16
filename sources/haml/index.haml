@@ -25,64 +25,66 @@
               %span.menu-open__hamburger__bar
               %span.menu-open__hamburger__bar
 
-            .menu-open__label
-              МЕНЮ
+            .menu-open__label{ data-i18n: "menulabel" }
 
         .top-navigation__right-b
           .button.button--header
-            %a{ href: "http://www.oicstartup.org" } Участвовать
+            %a{ href: "http://www.oicstartup.org", data-i18n: "join" }
           .lng-switch
             .dropdown
-              %a.dropdown-toggle{ href: "#", data-toggle: "dropdown" }
-                Русский
-                %b.caret
+              .dropdown-toggle.lng-switch__current{ href: "#", data-toggle: "dropdown" }
+                %b.caret.lng-switch__caret
 
               %ul.dropdown-menu
-                %li
-                  %a{ href: "#" } Русский
-                %li
-                  %a{ href: "#" } English
-
+                %li.lng-switch__lang{ data-lang: "ru" }
+                  Русский
+                %li.lng-switch__lang{ data-lang: "en" }
+                  English
 
     .swiper-container.swiper-container-g
       .swiper-wrapper
         .swiper-slide
           %header.header-block#main
-            .header-block__header
-              III Казанский
-              %br
-              форум молодых
-              %br
-              предпринимателей
-              %br
-              стран ОИС
+            .header-block__header{ data-i18n: "main.header" }
 
             .header-block__event
-              .header-block__event__date
-                15-20 Мая, 2017
-              .header-block__event__location
-                Казань, Татарстан, Россия
+              .header-block__event__date{ data-i18n: "main.date" }
+              .header-block__event__location{ data-i18n: "main.location" }
 
             .header-block__button
               .button.button--join
-                %a{ href: "http://www.oicstartup.org" } УЧАСТВОВАТЬ
+                %a{ href: "http://www.oicstartup.org", data-i18n: "join" }
 
         .swiper-slide
           %header.whocan-block#whocan
             .whocan-block__wrapper.gallery
               .whocan-block__video.gallery__image.gallery__image--video-cover
               .whocan-block__content
-                .whocan-block__content__header
-                  Кто может участвовать?
+                .whocan-block__content__header{ data-i18n: "participate.header" }
+
                 .swiper-container.whocan-block__content__slides
                   .swiper-wrapper
-                    .swiper-slide
+                    .swiper-slide{ data-i18n: "participate.slide1" }
                       Авторы старт ап проектов в сфере IT от 18 до 35 лет
-                    .swiper-slide
+                    .swiper-slide{ data-i18n: "participate.slide2" }
                       Участники с портфолио, в поиске инвестиций до $30 000
-                    .swiper-slide
+                    .swiper-slide{ data-i18n: "participate.slide3" }
                       Заинтересованые в поиске партнеров и инвесторов для реализации проекта в странах ОИС или России
                   .swiper-pagination
+        .swiper-slide
+          %header.select-participants-block#projectpick
+            .select-participants-block__header{ data-i18n: "selection.header" }
+            .select-participants-block__descr{ data-i18n: "selection.text" }
+            .select-participants-block__steps
+              .select-participants-block__step
+                .select-participants-block__step__counter 1
+                .select-participants-block__step__text{ data-i18n: "selection.list.first" }
+              .select-participants-block__step
+                .select-participants-block__step__counter 2
+                .select-participants-block__step__text{ data-i18n: "selection.list.second" }
+              .select-participants-block__step
+                .select-participants-block__step__counter 3
+                .select-participants-block__step__text{ data-i18n: "selection.list.third" }
 
         .swiper-slide
           %header.programm-block#program-p1
@@ -96,13 +98,13 @@
                 .swiper-button-prev.gallery__prev-btn
                 .swiper-button-next.gallery__next-btn
               .programm-block__content
-                .programm-block__content__date 15-17 мая
-                .programm-block__content__part ПЕРВЫЙ ЭТАП ПРОГРАММЫ
+                .programm-block__content__date{ data-i18n: "firststage.date" }
+                .programm-block__content__part{ data-i18n: "firststage.stage" }
                 .programm-block__content__header
                   OIC start up
                   %br
                   HUB platform
-                .programm-block__content__descr По итогам отбора на площадке OIC Startup platform лучшие 50 старт-ап проектов приглашаются принять участие в III Казанском форуме молодых предпринимателей стран ОИС, где Вас ожидает насыщенная программа, которая подготовит Вас к личной встрече с инвестором и презентации старт-апа на питч-сессии IT START-UP EXPO.
+                .programm-block__content__descr{ data-i18n: "firststage.text" }
 
         .swiper-slide
           %header.programm-block#program-p2
@@ -116,36 +118,15 @@
                 .swiper-button-prev.gallery__prev-btn
                 .swiper-button-next.gallery__next-btn
               .programm-block__content
-                .programm-block__content__date 18-19 мая
-                .programm-block__content__part ВТОРОЙ ЭТАП ПРОГРАММЫ
+                .programm-block__content__date{ data-i18n: "secondstage.date" }
+                .programm-block__content__part{ data-i18n: "secondstage.stage" }
                 .programm-block__content__header
                   YOUTH
                   %br
                   ENTREPRENEURSHIP
                   %br
                   FORUM
-                .programm-block__content__descr
-                  IT START-UP EXPO – это инвестиционная сессия, которая является заключительным этапом III Казанского форума молодых предпринимателей стран ОИС и проходит в рамках IX Международного экономического саммита России и стран ОИС.
-                  %br
-                  %br
-                  По итогам инвестиционной сессии заключаются соглашения между авторами старт-ап проектов и заинтересованными инвесторами.
-
-        .swiper-slide
-          %header.select-participants-block#projectpick
-            .select-participants-block__header
-              Отбор участников
-            .select-participants-block__descr
-              Программа начинается с регистрации на площадке OIC Startup platform, где после технического отбора у проекта появляется ментор, который помогает предоставить стартап инвестору на онлайн платформе.
-            .select-participants-block__steps
-              .select-participants-block__step
-                .select-participants-block__step__counter 1
-                .select-participants-block__step__text Регистрация старт-ап проекта на платформе
-              .select-participants-block__step
-                .select-participants-block__step__counter 2
-                .select-participants-block__step__text Прохождение технического отбора, взаимодействие с персональным ментором
-              .select-participants-block__step
-                .select-participants-block__step__counter 3
-                .select-participants-block__step__text Отбор проектов экспертами, приглашение от инвесторов на форум
+                .programm-block__content__descr{ data-i18n: "secondstage.text" }
 
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g
@@ -153,13 +134,13 @@
     .overlay-menu#overlaymenu
       .overlay-menu__closebtn
       .overlay-menu__content
-        %a.overlay-menu__content__link#home{ href: "#" } Главная
-        %a.overlay-menu__content__link#aboutus{ href: "#" } О нас
-        %a.overlay-menu__content__link#project{ href: "#" } Проект
-        -#%a.overlay-menu__content__link#trainers{ href: "#" } Тренеры
-        -#%a.overlay-menu__content__link#investors{ href: "#" } Инвесторы
-        -#%a.overlay-menu__content__link#partnership{ href: "#" } Партнеры
-        -#%a.overlay-menu__content__link#contacts{ href: "#" } Контакты
+        %a.overlay-menu__content__link#home{ href: "#",    data-i18n: "menu.home" } Главная
+        %a.overlay-menu__content__link#aboutus{ href: "#", data-i18n: "menu.about" } О нас
+        %a.overlay-menu__content__link#project{ href: "#", data-i18n: "menu.project" } Проект
+        -#%a.overlay-menu__content__link#trainers{ href: "#", data-i18n: "menu.trainers" } Тренеры
+        -#%a.overlay-menu__content__link#investors{ href: "#", data-i18n: "menu.investors" } Инвесторы
+        -#%a.overlay-menu__content__link#partnership{ href: "#", data-i18n: "menu.paartnership" } Партнеры
+        -#%a.overlay-menu__content__link#contacts{ href: "#", data-i18n: "menu.contacts" } Контакты
 
 
     %script{src: "./vendor/jquery/jquery.min.js"}

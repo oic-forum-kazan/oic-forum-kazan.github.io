@@ -84,4 +84,28 @@ $(function () {
     $('.overlay-menu__closebtn').trigger('click');
   });
 
+  var i18nOptions = {
+    fallbackLng: false,
+    useCookie: true,
+    lng: 'ru',
+    preload: ['ru', 'en']
+  };
+
+  $.i18n.init(i18nOptions, function() {
+    $('body').i18n();
+    $('.lng-switch__current').addClass('lng-switch__current--' + $.i18n.lng());
+  });
+
+  $('.lng-switch__lang').click(function () {
+    var changeLang = $(this).attr('data-lang');
+    console.log(changeLang);
+
+    console.log('lng-switch__current--' + $.i18n.lng() + ' has been removed');
+    $('.lng-switch__current').removeClass('lng-switch__current--' + $.i18n.lng());
+    $.i18n.setLng(changeLang);
+    $('body').i18n();
+    $('.lng-switch__current').addClass('lng-switch__current--' + $.i18n.lng());
+    console.log('lng-switch__current--' + $.i18n.lng() + ' has been added');
+  });
+
 });

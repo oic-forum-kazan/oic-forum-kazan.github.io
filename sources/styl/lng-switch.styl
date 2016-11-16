@@ -1,3 +1,41 @@
 .lng-switch
   display: none
   float: right
+  width: 80px
+  height 25px
+
+  &__caret
+    margin-left: 2px;
+    border-top: 7px dashed white;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    margin-bottom: 10px;
+
+  &__current
+    width: 50px
+    height: 25px
+    padding-left: 60px
+
+    background-repeat: no-repeat
+
+    &--ru
+      background-image: url('../images/icons/rus.png')
+    &--en
+      background-image: url('../images/icons/eng.png')
+
+  &__lang
+    margin-top: 2px
+    color: $white
+    font-family: 'Roboto'
+    font-size: 18px
+
+    & + &
+      border-top: 1px solid grey
+
+  & .dropdown-menu
+    width: 50px
+    border: 0
+    background: transparent
+    box-shadow: none
+
+
