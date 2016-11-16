@@ -620,3 +620,72 @@ header {
   line-height: 15px;
   text-align: center;
 }
+.trainers-block,
+.investors-block {
+  padding: 130px 30px 30px 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.trainers-block__wrapper,
+.investors-block__wrapper {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1000px;
+}
+.trainers-block__header,
+.investors-block__header {
+  margin-bottom: 13px;
+  font-size: 64px;
+  line-height: 85px;
+  color: #030303;
+  text-align: center;
+}
+.trainers-block__persons,
+.investors-block__persons {
+  zoom: 1;
+}
+.trainers-block__persons:before,
+.investors-block__persons:before,
+.trainers-block__persons:after,
+.investors-block__persons:after {
+  content: "";
+  display: table;
+}
+.trainers-block__persons:after,
+.investors-block__persons:after {
+  clear: both;
+}
+.trainers-block__person,
+.investors-block__person {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 266px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.trainers-block__person--red,
+.investors-block__person--red {
+  background-color: #f00;
+}
+.trainers-block__person--green,
+.investors-block__person--green {
+  background-color: #008000;
+}
+.trainers-block__person__bio,
+.investors-block__person__bio {
+  position: absolute;
+  display: none;
+}
+.trainers-block__person:hover .trainers-block__person__bio,
+.investors-block__person:hover .investors-block__person__bio {
+  display: block;
+}

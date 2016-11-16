@@ -67,6 +67,18 @@ $(function () {
     $('.overlay-menu__closebtn').trigger('click');
   });
 
+  $('#trainers').click(function () {
+    mainSwiper.slideTo(6);
+    $('.overlay-menu__closebtn').trigger('click');
+  });
+
+  $('#investors').click(function () {
+    mainSwiper.slideTo(7);
+    $('.overlay-menu__closebtn').trigger('click');
+  });
+
+
+
   var i18nOptions = {
     fallbackLng: false,
     useCookie: true,
@@ -81,14 +93,11 @@ $(function () {
 
   $('.lng-switch__lang').click(function () {
     var changeLang = $(this).attr('data-lang');
-    console.log(changeLang);
 
-    console.log('lng-switch__current--' + $.i18n.lng() + ' has been removed');
     $('.lng-switch__current').removeClass('lng-switch__current--' + $.i18n.lng());
     $.i18n.setLng(changeLang);
     $('body').i18n();
     $('.lng-switch__current').addClass('lng-switch__current--' + $.i18n.lng());
-    console.log('lng-switch__current--' + $.i18n.lng() + ' has been added');
   });
 
 });

@@ -1,0 +1,45 @@
+.trainers-block,
+.investors-block
+  padding: 130px 30px 30px 30px
+  font-family: 'Roboto'
+  font-weight: bold
+
+  &__wrapper
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    width: 1000px
+
+  &__header
+    margin-bottom: 13px
+    font-size: 64px
+    line-height: 85px
+    color: $black
+    text-align: center
+
+  &__persons
+    clearfix()
+
+  &__person
+    position: relative
+    float: left
+    width: 250px
+    height: 266px
+
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+    &--red
+      background-color: red
+
+    &--green
+      background-color: green
+
+
+    &__bio
+      position: absolute
+      display: none
+
+    &:hover &__bio
+      display: block

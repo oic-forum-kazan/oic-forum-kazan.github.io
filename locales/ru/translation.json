@@ -68,5 +68,11 @@
 			"date": "15-20 Мая"
 		},
 		"download": "СКАЧАТЬ В PDF"
+	},
+	"trainers": {
+		"header": "Тренеры"
+	},
+	"investors": {
+		"header": "Инвесторы"
 	}
 }

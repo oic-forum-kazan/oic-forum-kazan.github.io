@@ -6,7 +6,7 @@
 		"about":       "ABOUT US",
 		"project":     "PROJECT",
 		"trainers":    "TRAINERS",
-		"investors":   "INVERTORS",
+		"investors":   "INVESTORS",
 		"partnership": "PARTNERSHIP",
 		"contacts":    "CONTACTS"
 	},
@@ -68,5 +68,11 @@
 			"date": "15-20 May"
 		},
 		"download": "DOWNLOAD THE PROGRAMME"
+	},
+	"trainers": {
+		"header": "Trainers of forum"
+	},
+	"investors": {
+		"header": "Investors of forum"
 	}
 }
