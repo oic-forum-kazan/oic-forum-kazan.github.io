@@ -1,9 +1,18 @@
 .top-navigation
-  padding: 28px 30px
+  padding: 16px 30px
   height: 80px
   background: $white
 
-  box-shadow: 0 2px 4px 0
+  box-shadow: 0 2px 4px 0 rgba(10, 10, 10, 0.2)
+
+  &__left-b
+    float: left
+
+    &--padd
+      padding: 14px 0
+
+  &__right-b
+    float: right
 
   &--main
     box-shadow: none
@@ -15,3 +24,8 @@
   &--main .menu-open__label
     color: $white
 
+  &--main .lng-switch
+    display: block
+
+  &--main .button--header
+    display: none

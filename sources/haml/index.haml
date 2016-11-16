@@ -13,29 +13,35 @@
     %script{ src: "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" }
     %script{ src: "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" }
 
+    %link{ rel: "icon", type: "image/png", href: "./assets/images/icons/favicon.png" }
+
   %body
     %nav.navbar.navbar-fixed-top.top-navigation.top-navigation--main{ role: "navigation" }
       .container-fluid
-        .menu-open
-          .menu-open__hamburger
-            %span.menu-open__hamburger__bar
-            %span.menu-open__hamburger__bar
-            %span.menu-open__hamburger__bar
+        .top-navigation__left-b.top-navigation__left-b--padd
+          .menu-open
+            .menu-open__hamburger
+              %span.menu-open__hamburger__bar
+              %span.menu-open__hamburger__bar
+              %span.menu-open__hamburger__bar
 
-          .menu-open__label
-            МЕНЮ
+            .menu-open__label
+              МЕНЮ
 
-        .lng-switch
-          .dropdown
-            %a.dropdown-toggle{ href: "#", data-toggle: "dropdown" }
-              Русский
-              %b.caret
+        .top-navigation__right-b
+          .button.button--header
+            %a{ href: "http://www.oicstartup.org" } Участвовать
+          .lng-switch
+            .dropdown
+              %a.dropdown-toggle{ href: "#", data-toggle: "dropdown" }
+                Русский
+                %b.caret
 
-            %ul.dropdown-menu
-              %li
-                %a{ href: "#" } Русский
-              %li
-                %a{ href: "#" } English
+              %ul.dropdown-menu
+                %li
+                  %a{ href: "#" } Русский
+                %li
+                  %a{ href: "#" } English
 
 
     .swiper-container.swiper-container-g
@@ -58,7 +64,8 @@
                 Казань, Татарстан, Россия
 
             .header-block__button
-              .button.button--join УЧАСТВОВАТЬ
+              .button.button--join
+                %a{ href: "http://www.oicstartup.org" } УЧАСТВОВАТЬ
 
         .swiper-slide
           %header.whocan-block#whocan
@@ -72,7 +79,7 @@
                     .swiper-slide
                       Авторы старт ап проектов в сфере IT от 18 до 35 лет
                     .swiper-slide
-                      Участники с портфолио, в посике инвестиций до $30 000
+                      Участники с портфолио, в поиске инвестиций до $30 000
                     .swiper-slide
                       Заинтересованые в поиске партнеров и инвесторов для реализации проекта в странах ОИС или России
                   .swiper-pagination
@@ -140,8 +147,7 @@
                 .select-participants-block__step__counter 3
                 .select-participants-block__step__text Отбор проектов экспертами, приглашение от инвесторов на форум
 
-      .swiper-pagination.swiper-pagination-g
-      .swiper-button-next.swiper-button-next-g
+      .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g
 
     .overlay-menu#overlaymenu
@@ -150,13 +156,14 @@
         %a.overlay-menu__content__link#home{ href: "#" } Главная
         %a.overlay-menu__content__link#aboutus{ href: "#" } О нас
         %a.overlay-menu__content__link#project{ href: "#" } Проект
-        %a.overlay-menu__content__link#trainers{ href: "#" } Тренеры
-        %a.overlay-menu__content__link#investors{ href: "#" } Инвесторы
-        %a.overlay-menu__content__link#partnership{ href: "#" } Партнеры
-        %a.overlay-menu__content__link#contacts{ href: "#" } Контакты
+        -#%a.overlay-menu__content__link#trainers{ href: "#" } Тренеры
+        -#%a.overlay-menu__content__link#investors{ href: "#" } Инвесторы
+        -#%a.overlay-menu__content__link#partnership{ href: "#" } Партнеры
+        -#%a.overlay-menu__content__link#contacts{ href: "#" } Контакты
 
 
     %script{src: "./vendor/jquery/jquery.min.js"}
     %script{src: "./vendor/bootstrap/js/bootstrap.min.js"}
     %script{src: "./vendor/swiper/swiper.min.js"}
+    %script{src: "./vendor/i18next/i18next.js"}
     %script{src: "./assets/js/main.js"}
