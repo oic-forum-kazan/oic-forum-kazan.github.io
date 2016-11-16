@@ -3,6 +3,7 @@
   %head
     %title SECOND KAZAN OIC
     %meta{ charset: "utf-8" }
+    %meta{ name: "viewport",content: "width=device-width, initial-scale=1" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/bootstrap/css/bootstrap.min.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/creative/creative.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/swiper/swiper.min.css" }
@@ -65,11 +66,8 @@
                 .swiper-container.whocan-block__content__slides
                   .swiper-wrapper
                     .swiper-slide{ data-i18n: "participate.slide1" }
-                      Авторы старт ап проектов в сфере IT от 18 до 35 лет
                     .swiper-slide{ data-i18n: "participate.slide2" }
-                      Участники с портфолио, в поиске инвестиций до $30 000
                     .swiper-slide{ data-i18n: "participate.slide3" }
-                      Заинтересованые в поиске партнеров и инвесторов для реализации проекта в странах ОИС или России
                   .swiper-pagination
         .swiper-slide
           %header.select-participants-block#projectpick
@@ -127,6 +125,37 @@
                   %br
                   FORUM
                 .programm-block__content__descr{ data-i18n: "secondstage.text" }
+
+        .swiper-slide
+          %header.implementation-block#implementation
+            .implementation-block__wrapper
+              .implementation-block__header{ data-i18n: "implementation.header" }
+              .implementation-block__day
+                .implementation-block__current-event{ data-i18n: "implementation.currentevent" }
+                .implementation-block__day__title{ data-i18n: "implementation.event1.title" }
+                .implementation-block__day__date{ data-i18n: "implementation.event1.date" }
+
+              .implementation-block__day
+                .implementation-block__day__title{ data-i18n: "implementation.event2.title" }
+                .implementation-block__day__date{ data-i18n: "implementation.event2.date" }
+
+              .implementation-block__day
+                .implementation-block__day__title{ data-i18n: "implementation.event3.title" }
+                .implementation-block__day__date{ data-i18n: "implementation.event3.date" }
+
+              .implementation-block__day
+                .implementation-block__day__title{ data-i18n: "implementation.event4.title" }
+                .implementation-block__day__date{ data-i18n: "implementation.event4.date" }
+
+              .implementation-block__day
+                .implementation-block__day__title{ data-i18n: "implementation.event5.title" }
+                .implementation-block__day__date{ data-i18n: "implementation.event5.date" }
+
+              .implementation-block__day
+                .implementation-block__day__title{ data-i18n: "implementation.event6.title" }
+                .implementation-block__day__date{ data-i18n: "implementation.event6.date" }
+                %a.implementation-block__download{ href: "#", data-i18n: "implementation.download" }
+
 
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g

@@ -23,24 +23,10 @@ $(function () {
       if(swiper.activeIndex == 0){
         $('.top-navigation').addClass('top-navigation--main');
         $('.swiper-button-next-g').addClass('swiper-button-next-g--main');
-        mainSwiper.unlockSwipeToNext();
       }else{
         $('.top-navigation').removeClass('top-navigation--main');
-
-        if(swiper.activeIndex != swiper.slides.length-1)
-          $('.swiper-button-next-g').removeClass('swiper-button-next-g--main');
+        $('.swiper-button-next-g').removeClass('swiper-button-next-g--main');
       }
-
-      if(swiper.activeIndex == 1){
-        $('.swiper-button-next-g').addClass('swiper-button-disabled');
-        if(photoSwipe.activeIndex != 2)
-          swiper.lockSwipeToNext();
-
-      }
-
-      if(photoSwipe.activeIndex == 2)
-        $('.swiper-button-next-g').removeClass('swiper-button-disabled');
-
     }
   });
 
@@ -49,14 +35,9 @@ $(function () {
     paginationClickable: true,
     direction: 'vertical',
     simulateTouch: false,
+    autoplay: 5000,
     paginationBulletRender: function (index, className) {
       return '<span class="' + className + ' ' + className + '-numeric">' + (index + 1) + '</span>';
-    },
-    onSlideChangeStart: function (swiper) {
-      if (swiper.activeIndex == 2){
-        $('.swiper-button-next-g').removeClass('swiper-button-disabled');
-        mainSwiper.unlockSwipeToNext();
-      }
     }
   });
 
@@ -66,7 +47,9 @@ $(function () {
     prevButton: '.swiper-button-prev',
     paginationClickable: true,
     simulateTouch: false,
-    paginationType: 'bullets'
+    paginationType: 'bullets',
+    autoplay: 5000,
+    loop: true
   });
   
   $('#home').click(function () {

@@ -1,0 +1,75 @@
+.implementation-block
+  padding: 130px 30px 30px 30px
+  font-family: 'Roboto'
+  font-weight: bold
+
+  &__wrapper
+    position: relative
+    left: 50%
+    width: 410px
+    transform: translateX(-50%)
+
+  &__header
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    display: inline-block
+    border-bottom: 10px solid $black
+    color: $black
+    font-size: 18px
+    line-height: 25px
+    letter-spacing: 1px
+    text-align: center
+
+  &__current-event
+    position: relative
+    display: inline-block
+    left: 50%
+    margin-bottom: 5px
+    padding: 8px 17px
+    border-radius(3px)
+    background: $orange-yellow
+    color: $white
+    font-size: 14px
+    line-height: 15px
+    letter-spacing: 0.5px
+    transform: translateX(-50%)
+
+  &__current-event,
+  &__header
+    text-transform: uppercase
+
+  &__day
+    margin-top: 30px
+
+    &__title,
+    &__date
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: 5px
+
+    &__title
+      color: $black
+      font-size: 18px
+      letter-spacing: 1px
+      line-height: 25px
+      white-space: pre-line
+
+    &__date
+      color: $purpley-grey
+      font-size: 14px
+      letter-spacing: 0.5px
+      line-height: 15px
+
+  &__download,
+  &__download:hover
+    position: relative
+    display: inline-block
+    left: 50%
+    transform: translate(-50%, -10px)
+    color: $orange-yellow
+    text-decoration: none
+    font-size: 14px
+    line-height: 15px
+    text-align: center
+

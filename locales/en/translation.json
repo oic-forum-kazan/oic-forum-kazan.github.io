@@ -1,5 +1,5 @@
 {
-	"join": "Join",
+	"join": "Participate",
 	"menulabel": "MENU",
 	"menu": {
 		"home":        "HOME",
@@ -23,7 +23,7 @@
 	},
 	"selection": {
 		"header": "Selection Procedure",
-		"text": "In order to take part in the event you must register on OIC Startup Platform. After registering your start-up, revision and technical selection, you will be assigned to a mentor who will help to refine your projects in order to present them online to the investor. Selection: ",
+		"text": "In order to take part in the event you must register on OIC Startup Platform. After registering your start-up, revision and technical selection, you will be assigned to a mentor who will help to refine your projects in order to present them online to the investor.",
 		"list": {
 			"first": "Registration of the start-up on the platform;",
 			"second": "Technical selection and interaction with the assigned mentor;",
@@ -39,5 +39,34 @@
 		"date": "18-19 May, 2017",
 		"stage": "SECOND STAGE",
 		"text": "IT START-UP EXPO is an investment session held in the framework of IX International Economic Summit between Russia and OIC countries.\n\nIT START-UP EXPO is the final stage of the 3rd Kazan OIC Youth Entrepreneurship Forum where authors of start-ups make an agreement with interested investors."
+	},
+	"implementation": {
+		"header": "IMPLEMENTATION",
+		"currentevent": "CURRENT",
+		"event1": {
+			"title": "Open call and registration on the platform",
+			"date": "20 November – 20 January"
+		},
+		"event2": {
+			"title": "Technical selection of the projects",
+			"date": "20 January – 1 February"
+		},
+		"event3": {
+			"title": "Collaboration with mentors on OIC Startup platform",
+			"date": "1-28 February"
+		},
+		"event4": {
+			"title": "Collaboration with investors, online selection of participants to attend the Forum in Kazan",
+			"date": "1-31 March"
+		},
+		"event5": {
+			"title": "Visa processing",
+			"date": "1 April – 1 May"
+		},
+		"event6": {
+			"title": "Forum in Kazan",
+			"date": "15-20 May"
+		},
+		"download": "DOWNLOAD THE PROGRAMME"
 	}
 }
