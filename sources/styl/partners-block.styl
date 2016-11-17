@@ -1,0 +1,105 @@
+.partners-block
+  padding: 130px 30px 30px 30px
+  font-family: 'Roboco'
+
+  &__wrapper
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    width: 720px
+
+  &__header
+    margin-bottom: 13px
+    font-size: 64px
+    line-height: 85px
+    color: $black
+    text-align: center
+
+  &__organizers
+    margin-top: 34px
+
+  &__partners
+    margin-top: 40px
+
+  &__organizers,
+  &__partners
+    text-align: center
+    clearfix()
+
+  &__organizers-t,
+  &__partners-t
+    margin-bottom: 15px
+    color: $black
+    font-size: 36px
+    line-height: 49px
+    text-align: center
+
+    clearfix()
+
+  &__partner,
+  &__organizer
+    display: inline-block
+    height: 130px
+    width: 130px
+    transition: none
+
+    & + &
+      margin-left: 30px
+
+  &__organizer
+    height: 115px
+    background-position: 0 0
+    background-repeat: no-repeat
+
+    &--minrt
+      width: 106px
+
+      background-image: url('../images/icons/minsport.png')
+      background-size: 221px 115px
+
+      &:hover
+        background-position: -114px
+
+    &--icyfdc
+      width: 115px
+      background-image: url('../images/icons/icyfdc.png')
+      background-position: 0
+
+      &:hover
+        background-position: -114px
+
+    &--selet
+      width: 120px
+      background-image: url('../images/icons/selet.png')
+      background-position: 0
+
+      &:hover
+        background-position: -120px
+
+
+    &--summit
+      width: 127px
+      background-image: url('../images/icons/summit.png')
+      background-position: 0
+
+      &:hover
+        background-position: -127px
+
+  &__partner
+    height: 85px
+
+    &--itpark
+      width: 57px
+      background-image: url('../images/icons/itpark.png')
+      background-position: 0
+
+      &:hover
+        background-position: -57px
+
+    &--oxademy
+      width: 280px
+      background-image: url('../images/icons/oxademy.png')
+      background-position: 0
+
+      &:hover
+        background-position: -279px

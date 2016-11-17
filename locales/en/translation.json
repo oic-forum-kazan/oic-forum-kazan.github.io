@@ -74,5 +74,10 @@
 	},
 	"investors": {
 		"header": "Investors of forum"
+	},
+	"partnership": {
+		"header": "Partnership",
+		"organizers": "Organizers",
+		"partners": "Official partners"
 	}
 }

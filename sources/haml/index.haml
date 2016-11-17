@@ -3,7 +3,7 @@
   %head
     %title SECOND KAZAN OIC
     %meta{ charset: "utf-8" }
-    %meta{ name: "viewport",content: "width=device-width, initial-scale=1" }
+
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/bootstrap/css/bootstrap.min.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/creative/creative.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/swiper/swiper.min.css" }
@@ -161,21 +161,33 @@
             .trainers-block__wrapper
               .trainers-block__header{ data-i18n: "trainers.header" }
               .trainers-block__persons
-                .trainers-block__person.trainers-block__person--red
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/1.png')" }
+                  .trainers-block__person__bio
+                    %b Anton Grachev
+                    The CEO of the high technology park “IT park”.
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/2.png')" }
+                  .trainers-block__person__bio
+                    %b Lenar Khalikov
+                    The Head of the business incubator of “IT-park Kazan”.
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/3.png')" }
+                  .trainers-block__person__bio
+                    %b Yaroslav Shvetsov
+                    Representative of Investment Fund “KamaFlow”.
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/4.png')" }
+                  .trainers-block__person__bio
+                    %b Eugene Borisov
+                    Partner and Business Development Director at “KamaFlow”.
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/5.png')" }
+                  .trainers-block__person__bio
+                    %b Ilya Krasinsky
+                    IIDF, Happy Farm Business Incubator, Magic Ink, Russia Apple Developer User Group.
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/6.png')" }
+                  .trainers-block__person__bio
+                    %b Syed Shahzad
+                    Founder and Director General of “Oxademy”.
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/7.png')" }
                   .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--green
-                  .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--red
-                  .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--green
-                  .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--green
-                  .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--red
-                  .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--green
-                  .trainers-block__person__bio 1111
-                .trainers-block__person.trainers-block__person--red
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/8.png')" }
                   .trainers-block__person__bio 1111
 
         .swiper-slide
@@ -183,38 +195,76 @@
             .investors-block__wrapper
               .investors-block__header{ data-i18n: "investors.header" }
               .investors-block__persons
-                .investors-block__person.investors-block__person--red
-                  .investors-block__person__bio 1111
-                .investors-block__person.trainers-block__person--green
-                  .investors-block__person__bio 1111
-                .investors-block__person.investors-block__person--red
-                  .investors-block__person__bio 1111
-                .investors-block__person.trainers-block__person--green
-                  .investors-block__person__bio 1111
-                .investors-block__person.trainers-block__person--green
-                  .investors-block__person__bio 1111
-                .investors-block__person.investors-block__person--red
-                  .investors-block__person__bio 1111
-                .investors-block__person.trainers-block__person--green
-                  .investors-block__person__bio 1111
-                .investors-block__person.investors-block__person--red
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/1.png')" }
+                  .investors-block__person__bio
+                    %b Saafir Rabb II
+                    “Interculture” CEO.
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/2.png')" }
+                  .investors-block__person__bio
+                    %b Shahed Amanullah
+                    Co-Founder & CT;
+                    %br
+                    Affinis Labs.
+
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/3.png')" }
+                  .investors-block__person__bio
+                    %b Imran Sayeed
+                    Senior Lecturer;
+                    %br
+                    Massachusetts Institute of Technology Sloan School of Management.
+
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/4.png')" }
+                  .investors-block__person__bio
+                    %b Mahomed Iqbal
+                    The Head of investment banking.
+
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/5.png')" }
+                  .investors-block__person__bio
+                    %b Mirza Baig
+                    Partner;
+                    %br
+                    Aldrich capital partners.
+
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/8.png')" }
+                  .investors-block__person__bio
+                    %b Natalya Kaspersky
+                    The CEO of “InfoWatch” group.
+
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/7.png')" }
+                  .investors-block__person__bio 111
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/6.png')" }
                   .investors-block__person__bio 1111
 
+        .swiper-slide
+          %header.partners-block
+            .partners-block__wrapper
+              .partners-block__header{ data-i18n: "partnership.header" }
+              .partners-block__organizers
+                .partners-block__organizers-t{ data-i18n: "partnership.organizers" }
+                %a.partners-block__organizer.partners-block__organizer--minrt{ href: "#", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--icyfdc{ href: "#", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--selet{ href: "#", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--summit{ href: "#", target: "_blank" }
 
+              .partners-block__partners
+                .partners-block__partners-t{ data-i18n: "partnership.partners" }
+                %a.partners-block__partner.partners-block__partner--itpark{ href: "#", target: "_blank" }
+                %a.partners-block__partner.partners-block__partner--oxademy{ href: "#", target: "_blank" }
 
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g
+      .swiper-scrollbar
 
     .overlay-menu#overlaymenu
       .overlay-menu__closebtn
       .overlay-menu__content
-        %a.overlay-menu__content__link#home{ href: "#",    data-i18n: "menu.home" } Главная
-        %a.overlay-menu__content__link#aboutus{ href: "#", data-i18n: "menu.about" } О нас
-        %a.overlay-menu__content__link#project{ href: "#", data-i18n: "menu.project" } Проект
-        %a.overlay-menu__content__link#trainers{ href: "#", data-i18n: "menu.trainers" } Тренеры
-        %a.overlay-menu__content__link#investors{ href: "#", data-i18n: "menu.investors" } Инвесторы
-        -#%a.overlay-menu__content__link#partnership{ href: "#", data-i18n: "menu.paartnership" } Партнеры
-        -#%a.overlay-menu__content__link#contacts{ href: "#", data-i18n: "menu.contacts" } Контакты
+        %a.overlay-menu__content__link#home{ href: "#", data-i18n: "menu.home" }
+        %a.overlay-menu__content__link#aboutus{ href: "#", data-i18n: "menu.about" }
+        %a.overlay-menu__content__link#project{ href: "#", data-i18n: "menu.project" }
+        %a.overlay-menu__content__link#trainers{ href: "#", data-i18n: "menu.trainers" }
+        %a.overlay-menu__content__link#investors{ href: "#", data-i18n: "menu.investors" }
+        %a.overlay-menu__content__link#partnership{ href: "#", data-i18n: "menu.partnership" }
+        -#%a.overlay-menu__content__link#contacts{ href: "#", data-i18n: "menu.contacts" }
 
 
     %script{src: "./vendor/jquery/jquery.min.js"}

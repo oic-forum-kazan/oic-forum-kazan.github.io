@@ -151,7 +151,7 @@ header {
   height: 25px;
 }
 .lng-switch__caret {
-  margin-left: 2px;
+  margin-left: 12px;
   border-top: 7px dashed #fff;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
@@ -160,14 +160,18 @@ header {
 .lng-switch__current {
   width: 50px;
   height: 25px;
-  padding-left: 60px;
+  padding-left: 50px;
   background-repeat: no-repeat;
+  background-image: url("../images/icons/flags.png");
+  -webkit-background-size: 100px 25px;
+  -moz-background-size: 100px 25px;
+  background-size: 100px 25px;
 }
 .lng-switch__current--ru {
-  background-image: url("../images/icons/rus.png");
+  background-position: -50px;
 }
 .lng-switch__current--en {
-  background-image: url("../images/icons/eng.png");
+  background-position: 0;
 }
 .lng-switch__lang {
   margin-top: 2px;
@@ -507,13 +511,13 @@ header {
   background-size: cover;
 }
 .gallery__image--first {
-  background-image: url("../images/photos/1.png");
+  background-image: url("../images/photos/programms/1.png");
 }
 .gallery__image--second {
-  background-image: url("../images/photos/2.png");
+  background-image: url("../images/photos/programms/2.png");
 }
 .gallery__image--third {
-  background-image: url("../images/photos/3.png");
+  background-image: url("../images/photos/programms/3.png");
 }
 .gallery__image--video-cover {
   background-image: url("../images/photos/5.png");
@@ -672,20 +676,163 @@ header {
   background-size: cover;
   background-position: center center;
 }
-.trainers-block__person--red,
-.investors-block__person--red {
-  background-color: #f00;
-}
-.trainers-block__person--green,
-.investors-block__person--green {
-  background-color: #008000;
-}
 .trainers-block__person__bio,
 .investors-block__person__bio {
   position: absolute;
   display: none;
+  padding: 24px 20px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #030303;
+  font-size: 14px;
+  line-height: 21px;
+}
+.trainers-block__person__bio b,
+.investors-block__person__bio b {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Roboco';
 }
 .trainers-block__person:hover .trainers-block__person__bio,
 .investors-block__person:hover .investors-block__person__bio {
   display: block;
+}
+.partners-block {
+  padding: 130px 30px 30px 30px;
+  font-family: 'Roboco';
+}
+.partners-block__wrapper {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 720px;
+}
+.partners-block__header {
+  margin-bottom: 13px;
+  font-size: 64px;
+  line-height: 85px;
+  color: #030303;
+  text-align: center;
+}
+.partners-block__organizers {
+  margin-top: 34px;
+}
+.partners-block__partners {
+  margin-top: 40px;
+}
+.partners-block__organizers,
+.partners-block__partners {
+  text-align: center;
+  zoom: 1;
+}
+.partners-block__organizers:before,
+.partners-block__partners:before,
+.partners-block__organizers:after,
+.partners-block__partners:after {
+  content: "";
+  display: table;
+}
+.partners-block__organizers:after,
+.partners-block__partners:after {
+  clear: both;
+}
+.partners-block__organizers-t,
+.partners-block__partners-t {
+  margin-bottom: 15px;
+  color: #030303;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  zoom: 1;
+}
+.partners-block__organizers-t:before,
+.partners-block__partners-t:before,
+.partners-block__organizers-t:after,
+.partners-block__partners-t:after {
+  content: "";
+  display: table;
+}
+.partners-block__organizers-t:after,
+.partners-block__partners-t:after {
+  clear: both;
+}
+.partners-block__partner,
+.partners-block__organizer {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.partners-block__partner + .partners-block__partner,
+.partners-block__organizer + .partners-block__organizer {
+  margin-left: 30px;
+}
+.partners-block__organizer {
+  height: 115px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.partners-block__organizer--minrt {
+  width: 106px;
+  background-image: url("../images/icons/minsport.png");
+  -webkit-background-size: 221px 115px;
+  -moz-background-size: 221px 115px;
+  background-size: 221px 115px;
+}
+.partners-block__organizer--minrt:hover {
+  background-position: -114px;
+}
+.partners-block__organizer--icyfdc {
+  width: 115px;
+  background-image: url("../images/icons/icyfdc.png");
+  background-position: 0;
+}
+.partners-block__organizer--icyfdc:hover {
+  background-position: -114px;
+}
+.partners-block__organizer--selet {
+  width: 120px;
+  background-image: url("../images/icons/selet.png");
+  background-position: 0;
+}
+.partners-block__organizer--selet:hover {
+  background-position: -120px;
+}
+.partners-block__organizer--summit {
+  width: 127px;
+  background-image: url("../images/icons/summit.png");
+  background-position: 0;
+}
+.partners-block__organizer--summit:hover {
+  background-position: -127px;
+}
+.partners-block__partner {
+  height: 85px;
+}
+.partners-block__partner--itpark {
+  width: 57px;
+  background-image: url("../images/icons/itpark.png");
+  background-position: 0;
+}
+.partners-block__partner--itpark:hover {
+  background-position: -57px;
+}
+.partners-block__partner--oxademy {
+  width: 280px;
+  background-image: url("../images/icons/oxademy.png");
+  background-position: 0;
+}
+.partners-block__partner--oxademy:hover {
+  background-position: -279px;
 }

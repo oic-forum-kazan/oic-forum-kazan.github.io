@@ -77,7 +77,10 @@ $(function () {
     $('.overlay-menu__closebtn').trigger('click');
   });
 
-
+  $('#partnership').click(function () {
+    mainSwiper.slideTo(8);
+    $('.overlay-menu__closebtn').trigger('click');
+  });
 
   var i18nOptions = {
     fallbackLng: false,

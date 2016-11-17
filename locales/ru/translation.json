@@ -70,9 +70,14 @@
 		"download": "СКАЧАТЬ В PDF"
 	},
 	"trainers": {
-		"header": "Тренеры"
+		"header": "Эксперты и менторы"
 	},
 	"investors": {
 		"header": "Инвесторы"
+	},
+	"partnership": {
+		"header": "Партнерство",
+		"organizers": "Организаторы",
+		"partners": "Официальные партнеры"
 	}
 }
