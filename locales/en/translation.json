@@ -79,5 +79,18 @@
 		"header": "Partnership",
 		"organizers": "Organizers",
 		"partners": "Official partners"
+	},
+	"contactus": {
+		"header": "Contact us",
+		"international": "INTERNATIONAL ISSUES",
+		"general": "GENERAL ISSUES",
+		"map": "SHOW ON THE MAP",
+		"location": "Kazan, Russian Federation",
+		"send": "SEND MESSAGE",
+		"placeholder": {
+			"name": "Your name and surname",
+			"mail": "your@mail",
+			"message": "Your message"
+		}
 	}
 }

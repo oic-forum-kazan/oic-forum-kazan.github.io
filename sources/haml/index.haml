@@ -251,6 +251,31 @@
                 %a.partners-block__partner.partners-block__partner--itpark{ href: "#", target: "_blank" }
                 %a.partners-block__partner.partners-block__partner--oxademy{ href: "#", target: "_blank" }
 
+        .swiper-slide
+          %header.contactus-block
+            .contactus-block__wrapper
+              .contactus-block__header{ data-i18n: "contactus.header" }
+              .contactus-block__row
+                .contactus-block__col.contactus-block__col--contacts
+                  .contactus-block__col.contactus-block__col--form
+                    %input{ data-i18n: "[placeholder]contactus.placeholder.name"}
+                    %input{ data-i18n: "[placeholder]contactus.placeholder.mail"}
+                    %textarea{ data-i18n: "[placeholder]contactus.placeholder.message"}
+                    %button{ data-i18n: "contactus.send" }
+
+                  .contactus-block__col__mails
+                    %b{ data-i18n: "contactus.international" }
+                    %a{ href: "mailto:kazanforum2016@icyf-dc.org" } kazanforum2016@icyf-dc.org
+                    %b{ data-i18n: "contactus.general" }
+                    %a{ href: "mailto:oicyouthforum.tatar@gmail.com" } oicyouthforum.tatar@gmail.com
+                  .contactus-block__col__map
+                    %b{ data-i18n: "contactus.map" }
+                    %a{ href: "#", data-i18n: "contactus.location" }
+                .contactus-block__col.contactus-block__col--social
+                  %a{ href: "#"} FB
+                  %a{ href: "#"} VK
+                  %a{ href: "#"} TW
+
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g
       .swiper-scrollbar
@@ -264,7 +289,7 @@
         %a.overlay-menu__content__link#trainers{ href: "#", data-i18n: "menu.trainers" }
         %a.overlay-menu__content__link#investors{ href: "#", data-i18n: "menu.investors" }
         %a.overlay-menu__content__link#partnership{ href: "#", data-i18n: "menu.partnership" }
-        -#%a.overlay-menu__content__link#contacts{ href: "#", data-i18n: "menu.contacts" }
+        %a.overlay-menu__content__link#contacts{ href: "#", data-i18n: "menu.contacts" }
 
 
     %script{src: "./vendor/jquery/jquery.min.js"}

@@ -82,6 +82,11 @@ $(function () {
     $('.overlay-menu__closebtn').trigger('click');
   });
 
+  $('#contacts').click(function () {
+    mainSwiper.slideTo(9);
+    $('.overlay-menu__closebtn').trigger('click');
+  });
+
   var i18nOptions = {
     fallbackLng: false,
     useCookie: true,

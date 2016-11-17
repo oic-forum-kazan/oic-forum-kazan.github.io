@@ -1,0 +1,96 @@
+.contactus-block
+  padding: 130px 30px 30px 30px
+
+  &__header
+    color: $black
+    font-size: 64px
+    line-height: 86px
+    font-family: 'Roboco'
+    font-weight: bold
+    text-align: center
+
+  &__row
+    position: relative
+    margin-top: 40px
+
+  &__col
+    width: 272px
+
+    &--contacts
+      float: left
+      margin-right: 50px
+
+      & b,
+      & a
+        display: block
+        color: $black
+        font-size: 14px
+        line-height: 15px
+
+      & b
+        margin-bottom: 10px
+
+      & a
+        margin-bottom: 20px
+        padding-left: 30px
+        height: 24px
+        line-height: 24px
+        text-decoration: none
+
+    &--social
+      float: right
+      margin-left: 50px
+
+      & a
+        display: inline-block
+        margin-right: 5px
+
+    &--form
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 496px
+
+      & input,
+      & textarea,
+      & button
+        display: inline-block
+        margin-bottom: 20px
+        width: 496px
+        background: $white-two
+        color: $black
+        border: 0
+        outline: 0
+        font-family: 'Roboco'
+        font-weight: bold
+        height: 60px
+        font-size: 14px
+
+        +placeholder()
+          color: $purpley-grey
+          font-family: 'Roboco'
+          font-weight: bold
+          text-transform: uppercase
+
+      & input
+        padding: 22px 15px
+        line-height: 15px
+
+      & textarea
+        margin-bottom: 30px
+        padding: 24px 15px
+        height: 213px
+        line-height: 15px
+
+      & button
+        height: 60px
+        background: $orange-yellow
+        color: $ochre
+        line-height: 60px
+        text-align: center
+        letter-spacing: 1px
+        border-radius(3px)
+
+
+
