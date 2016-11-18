@@ -90,7 +90,7 @@ $(function () {
   var i18nOptions = {
     fallbackLng: false,
     useCookie: true,
-    lng: 'ru',
+    lng: 'en',
     preload: ['ru', 'en']
   };
 
@@ -107,5 +107,11 @@ $(function () {
     $('body').i18n();
     $('.lng-switch__current').addClass('lng-switch__current--' + $.i18n.lng());
   });
+
+  window.callF = function () {
+    var msg = $('#contactus-form').serialize();
+    alert(msg);
+  }
+
 
 });

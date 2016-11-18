@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title SECOND KAZAN OIC
+    %title THIRD KAZAN OIC
     %meta{ charset: "utf-8" }
 
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/bootstrap/css/bootstrap.min.css" }
@@ -109,9 +109,9 @@
             .programm-block__wrapper
               .swiper-container.programm-block__photos.programm-block__photos-p2
                 .swiper-wrapper.gallery
-                  .swiper-slide.gallery__image--first
-                  .swiper-slide.gallery__image--second
-                  .swiper-slide.gallery__image--third
+                  .swiper-slide.gallery__image--empty
+                  .swiper-slide.gallery__image--empty
+                  .swiper-slide.gallery__image--empty
                 .swiper-pagination
                 .swiper-button-prev.gallery__prev-btn
                 .swiper-button-next.gallery__next-btn
@@ -225,14 +225,14 @@
                     %br
                     Aldrich capital partners.
 
-                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/8.png')" }
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/6.png')" }
                   .investors-block__person__bio
                     %b Natalya Kaspersky
                     The CEO of “InfoWatch” group.
 
                 .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/7.png')" }
                   .investors-block__person__bio 111
-                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/6.png')" }
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/8.png')" }
                   .investors-block__person__bio 1111
 
         .swiper-slide
@@ -257,10 +257,10 @@
               .contactus-block__header{ data-i18n: "contactus.header" }
               .contactus-block__row
                 .contactus-block__col.contactus-block__col--contacts
-                  .contactus-block__col.contactus-block__col--form
-                    %input{ data-i18n: "[placeholder]contactus.placeholder.name"}
-                    %input{ data-i18n: "[placeholder]contactus.placeholder.mail"}
-                    %textarea{ data-i18n: "[placeholder]contactus.placeholder.message"}
+                  %form.contactus-block__col.contactus-block__col--form#contactus-form{ method: "POST", onsubmit: "callF()" }
+                    %input{ data-i18n: "[placeholder]contactus.placeholder.name", name: "name" }
+                    %input{ data-i18n: "[placeholder]contactus.placeholder.mail", name: "mail"}
+                    %textarea{ data-i18n: "[placeholder]contactus.placeholder.message", name: "text"}
                     %button{ data-i18n: "contactus.send" }
 
                   .contactus-block__col__mails
@@ -272,13 +272,12 @@
                     %b{ data-i18n: "contactus.map" }
                     %a{ href: "#", data-i18n: "contactus.location" }
                 .contactus-block__col.contactus-block__col--social
-                  %a{ href: "#"} FB
-                  %a{ href: "#"} VK
-                  %a{ href: "#"} TW
+                  %a#fb{ href: "#"}
+                  %a#vk{ href: "#"}
+                  %a#tw{ href: "#"}
 
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g
-      .swiper-scrollbar
 
     .overlay-menu#overlaymenu
       .overlay-menu__closebtn

@@ -5,13 +5,16 @@
     color: $black
     font-size: 64px
     line-height: 86px
-    font-family: 'Roboco'
+    font-family: 'Roboto'
     font-weight: bold
     text-align: center
 
   &__row
     position: relative
+    left: 50%;
     margin-top: 40px
+    max-width: 1140px;
+    transform: translateX(-50%);
 
   &__col
     width: 272px
@@ -37,13 +40,35 @@
         line-height: 24px
         text-decoration: none
 
+    &__mails
+      & a
+        background: url('../images/icons/mail-icon.svg') no-repeat 0 center
+
+    &__map
+      & a
+        padding-left: 20px
+        background: url('../images/icons/map-icon.svg') no-repeat 0 center
+
     &--social
       float: right
       margin-left: 50px
 
       & a
         display: inline-block
-        margin-right: 5px
+        margin-right: 10px
+        height: 20px
+
+      & #fb
+        width: 20px
+        background: url('../images/icons/fb.svg') no-repeat center center
+
+      & #vk
+        width: 20px
+        background: url('../images/icons/vk.svg') no-repeat center center
+
+      & #tw
+        width: 25px
+        background: url('../images/icons/tw.svg') no-repeat center center
 
     &--form
       position: absolute
@@ -62,14 +87,14 @@
         color: $black
         border: 0
         outline: 0
-        font-family: 'Roboco'
+        font-family: 'Roboto'
         font-weight: bold
         height: 60px
         font-size: 14px
 
         +placeholder()
           color: $purpley-grey
-          font-family: 'Roboco'
+          font-family: 'Roboto'
           font-weight: bold
           text-transform: uppercase
 

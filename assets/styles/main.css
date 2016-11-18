@@ -78,6 +78,9 @@ header {
 .swiper-button-next-g--main {
   background: #fff url("../images/icons/next-slide-black.svg") center 15px no-repeat;
 }
+.swiper-button-disabled.swiper-button-next-g {
+  display: none;
+}
 .top-navigation {
   padding: 16px 30px;
   height: 80px;
@@ -234,21 +237,26 @@ header {
   line-height: 25px;
   font-family: 'Roboto';
   font-weight: bold;
+  text-align: center;
 }
 .button--join {
-  padding: 17px 43px;
+  width: 230px;
+  height: 60px;
+}
+.button--join a {
+  line-height: 60px;
 }
 .button--header {
-  padding: 13px 20px;
-  line-height: normal;
+  width: 190px;
+  height: 50px;
 }
-.button--shedule {
-  padding-top: 8px 12px;
-  fon-size: 14px;
-  line-height: 15px;
-  letter-spacing: 0.5px;
+.button--header a {
+  line-height: 50px;
 }
 .button a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #fff;
   text-decoration: none;
 }
@@ -479,6 +487,7 @@ header {
 }
 .programm-block__content {
   width: 600px;
+  padding-top: 50px;
   padding-left: 30px;
   float: left;
 }
@@ -518,6 +527,18 @@ header {
 }
 .gallery__image--third {
   background-image: url("../images/photos/programms/3.png");
+}
+.gallery__image--fourth {
+  background-image: url("../images/photos/programms/4.png");
+}
+.gallery__image--fifth {
+  background-image: url("../images/photos/programms/5.png");
+}
+.gallery__image--sixth {
+  background-image: url("../images/photos/programms/6.png");
+}
+.gallery__image--empty {
+  background: #fff;
 }
 .gallery__image--video-cover {
   background-image: url("../images/photos/5.png");
@@ -569,13 +590,16 @@ header {
   display: inline-block;
   left: 50%;
   margin-bottom: 5px;
-  padding: 8px 17px;
+  width: 140px;
+  height: 30px;
+  font-size: 14px;
   border-radius: 3px;
   background: #ffa900;
   color: #fff;
-  font-size: 14px;
-  line-height: 15px;
+  line-height: 30px;
+  text-align: center;
   letter-spacing: 0.5px;
+  font-family: 'Roboto';
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
@@ -694,7 +718,7 @@ header {
   margin-bottom: 5px;
   font-size: 24px;
   line-height: 32px;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
 }
 .trainers-block__person:hover .trainers-block__person__bio,
 .investors-block__person:hover .investors-block__person__bio {
@@ -702,7 +726,7 @@ header {
 }
 .partners-block {
   padding: 130px 30px 30px 30px;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
 }
 .partners-block__wrapper {
   position: relative;
@@ -843,13 +867,20 @@ header {
   color: #030303;
   font-size: 64px;
   line-height: 86px;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
   font-weight: bold;
   text-align: center;
 }
 .contactus-block__row {
   position: relative;
+  left: 50%;
   margin-top: 40px;
+  max-width: 1140px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .contactus-block__col {
   width: 272px;
@@ -875,13 +906,33 @@ header {
   line-height: 24px;
   text-decoration: none;
 }
+.contactus-block__col__mails a {
+  background: url("../images/icons/mail-icon.svg") no-repeat 0 center;
+}
+.contactus-block__col__map a {
+  padding-left: 20px;
+  background: url("../images/icons/map-icon.svg") no-repeat 0 center;
+}
 .contactus-block__col--social {
   float: right;
   margin-left: 50px;
 }
 .contactus-block__col--social a {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.contactus-block__col--social #fb {
+  width: 20px;
+  background: url("../images/icons/fb.svg") no-repeat center center;
+}
+.contactus-block__col--social #vk {
+  width: 20px;
+  background: url("../images/icons/vk.svg") no-repeat center center;
+}
+.contactus-block__col--social #tw {
+  width: 25px;
+  background: url("../images/icons/tw.svg") no-repeat center center;
 }
 .contactus-block__col--form {
   position: absolute;
@@ -904,7 +955,7 @@ header {
   color: #030303;
   border: 0;
   outline: 0;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
   font-weight: bold;
   height: 60px;
   font-size: 14px;
@@ -913,7 +964,7 @@ header {
 .contactus-block__col--form textarea::-webkit-input-placeholder,
 .contactus-block__col--form button::-webkit-input-placeholder {
   color: #8f8e94;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -921,7 +972,7 @@ header {
 .contactus-block__col--form textarea:-moz-placeholder,
 .contactus-block__col--form button:-moz-placeholder {
   color: #8f8e94;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -929,7 +980,7 @@ header {
 .contactus-block__col--form textarea::-moz-placeholder,
 .contactus-block__col--form button::-moz-placeholder {
   color: #8f8e94;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -937,7 +988,7 @@ header {
 .contactus-block__col--form textarea:-ms-input-placeholder,
 .contactus-block__col--form button:-ms-input-placeholder {
   color: #8f8e94;
-  font-family: 'Roboco';
+  font-family: 'Roboto';
   font-weight: bold;
   text-transform: uppercase;
 }
