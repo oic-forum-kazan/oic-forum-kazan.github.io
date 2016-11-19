@@ -2,3 +2,4 @@
 node_modules/
 assets/styles/*
 !main.css
+assets/video/*

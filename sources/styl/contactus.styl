@@ -1,6 +1,12 @@
 .contactus-block
   padding: 130px 30px 30px 30px
 
+  &__wrapper
+    position: relative
+    left: 50%;
+    max-width: 1140px;
+    transform: translateX(-50%);
+
   &__header
     color: $black
     font-size: 64px
@@ -10,11 +16,8 @@
     text-align: center
 
   &__row
-    position: relative
-    left: 50%;
     margin-top: 40px
-    max-width: 1140px;
-    transform: translateX(-50%);
+    position: relative
 
   &__col
     width: 272px
@@ -52,11 +55,18 @@
     &--social
       float: right
       margin-left: 50px
+      height: 100%
 
       & a
         display: inline-block
         margin-right: 10px
         height: 20px
+
+      & b
+        display: block
+        color: $black
+        font-size: 14px
+        line-height: 15px
 
       & #fb
         width: 20px
@@ -77,11 +87,16 @@
       transform: translateX(-50%)
       width: 496px
 
-      & input,
+      & input[type="text"],
+      & input[type="email"],
+      & button
+        margin-bottom: 20px
+
+      & input[type="text"],
+      & input[type="email"],
       & textarea,
       & button
         display: inline-block
-        margin-bottom: 20px
         width: 496px
         background: $white-two
         color: $black
@@ -98,12 +113,12 @@
           font-weight: bold
           text-transform: uppercase
 
-      & input
+      & input[type="text"],
+      & input[type="email"]
         padding: 22px 15px
         line-height: 15px
 
       & textarea
-        margin-bottom: 30px
         padding: 24px 15px
         height: 213px
         line-height: 15px
@@ -117,5 +132,27 @@
         letter-spacing: 1px
         border-radius(3px)
 
+      & label
+        display: inline-block
+        margin-left: 10px
+        margin-bottom: 10px
+        color: $black
+        font-size: 14px
+        line-height: 15px
 
+
+  &__summit
+    position: absolute
+    left: 0
+    bottom: 0
+    display: inline-block
+    width: 127px
+    height: 130px
+    background-image: url('../images/icons/summit.png')
+    background-position: 0
+    background-repeat: no-repeat
+    transition: none
+
+    &:hover
+      background-position: -127px
 

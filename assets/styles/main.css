@@ -60,23 +60,18 @@ header {
   display: none;
 }
 .swiper-button-next-g {
-  bottom: -25px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background: #030303 url("../images/icons/next-slide-white.svg") center 15px no-repeat;
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  background-size: auto;
+  width: 58px;
+  height: 32px;
+  background: url("../images/icons/black-scroll.svg") no-repeat;
 }
 .swiper-button-next-g--main {
-  background: #fff url("../images/icons/next-slide-black.svg") center 15px no-repeat;
+  background: url("../images/icons/white-scroll.svg") no-repeat;
 }
 .swiper-button-disabled.swiper-button-next-g {
   display: none;
@@ -152,6 +147,7 @@ header {
   float: right;
   width: 80px;
   height: 25px;
+  margin-top: 14px;
 }
 .lng-switch__caret {
   margin-left: 12px;
@@ -213,6 +209,7 @@ header {
   font-family: 'Roboto';
   font-weight: bold;
   white-space: pre;
+  text-transform: uppercase;
 }
 .header-block__event__date,
 .header-block__event__location {
@@ -331,7 +328,7 @@ header {
   margin-top: 20px;
   width: 720px;
   color: #4a4a4a;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 27px;
 }
 .select-participants-block__steps {
@@ -375,7 +372,7 @@ header {
   width: 338px;
   margin-left: 80px;
   font-family: 'Roboto';
-  font-size: 18px;
+  font-size: 24px;
   line-height: 27px;
   color: #4a4a4a;
 }
@@ -418,9 +415,87 @@ header {
   clear: both;
 }
 .whocan-block__video {
+  position: relative;
   height: 690px;
   width: 535px;
   float: left;
+  overflow: hidden;
+}
+.whocan-block__video__turn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: url("../images/icons/close-cross.svg") no-repeat;
+  z-index: 3;
+}
+.whocan-block__video--expanded .whocan-block__video__turn {
+  display: block;
+}
+.whocan-block__video__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.42);
+  z-index: 2;
+}
+.whocan-block__video__overlay--hide {
+  display: none;
+}
+.whocan-block__video__play,
+.whocan-block__video__text {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+}
+.whocan-block__video__play {
+  margin-top: 315px;
+  width: 88px;
+  height: 70px;
+  background: url("../images/icons/play.svg") no-repeat;
+  text-align: left;
+}
+.whocan-block__video__text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+.whocan-block__video .vjs-control-bar {
+  display: none;
+}
+.whocan-block__video .video-js {
+  width: 1140px;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.whocan-block__video--expanded {
+  position: absolute;
+  width: 100%;
+}
+.whocan-block__video--expanded .vjs-control-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.whocan-block__video--expanded + .whocan-block__content {
+  display: none;
 }
 .whocan-block__content {
   padding-left: 30px;
@@ -440,11 +515,14 @@ header {
 .whocan-block__content__slides {
   height: 300px;
 }
+.whocan-block__content__slides li {
+  white-space: pre-line;
+}
 .whocan-block__content__slides .swiper-slide {
   width: 435px;
   color: #030303;
-  font-size: 36px;
-  line-height: 49px;
+  font-size: 24px;
+  line-height: 34px;
 }
 .whocan-block__content__slides .swiper-pagination {
   top: 0;
@@ -611,7 +689,7 @@ header {
   text-transform: uppercase;
 }
 .implementation-block__day {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .implementation-block__day__title,
 .implementation-block__day__date {
@@ -863,6 +941,16 @@ header {
 .contactus-block {
   padding: 130px 30px 30px 30px;
 }
+.contactus-block__wrapper {
+  position: relative;
+  left: 50%;
+  max-width: 1140px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 .contactus-block__header {
   color: #030303;
   font-size: 64px;
@@ -872,15 +960,8 @@ header {
   text-align: center;
 }
 .contactus-block__row {
-  position: relative;
-  left: 50%;
   margin-top: 40px;
-  max-width: 1140px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  position: relative;
 }
 .contactus-block__col {
   width: 272px;
@@ -916,11 +997,18 @@ header {
 .contactus-block__col--social {
   float: right;
   margin-left: 50px;
+  height: 100%;
 }
 .contactus-block__col--social a {
   display: inline-block;
   margin-right: 10px;
   height: 20px;
+}
+.contactus-block__col--social b {
+  display: block;
+  color: #030303;
+  font-size: 14px;
+  line-height: 15px;
 }
 .contactus-block__col--social #fb {
   width: 20px;
@@ -945,11 +1033,16 @@ header {
   transform: translateX(-50%);
   width: 496px;
 }
-.contactus-block__col--form input,
+.contactus-block__col--form input[type="text"],
+.contactus-block__col--form input[type="email"],
+.contactus-block__col--form button {
+  margin-bottom: 20px;
+}
+.contactus-block__col--form input[type="text"],
+.contactus-block__col--form input[type="email"],
 .contactus-block__col--form textarea,
 .contactus-block__col--form button {
   display: inline-block;
-  margin-bottom: 20px;
   width: 496px;
   background: #f5f5f5;
   color: #030303;
@@ -960,7 +1053,8 @@ header {
   height: 60px;
   font-size: 14px;
 }
-.contactus-block__col--form input::-webkit-input-placeholder,
+.contactus-block__col--form input[type="text"]::-webkit-input-placeholder,
+.contactus-block__col--form input[type="email"]::-webkit-input-placeholder,
 .contactus-block__col--form textarea::-webkit-input-placeholder,
 .contactus-block__col--form button::-webkit-input-placeholder {
   color: #8f8e94;
@@ -968,7 +1062,8 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
-.contactus-block__col--form input:-moz-placeholder,
+.contactus-block__col--form input[type="text"]:-moz-placeholder,
+.contactus-block__col--form input[type="email"]:-moz-placeholder,
 .contactus-block__col--form textarea:-moz-placeholder,
 .contactus-block__col--form button:-moz-placeholder {
   color: #8f8e94;
@@ -976,7 +1071,8 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
-.contactus-block__col--form input::-moz-placeholder,
+.contactus-block__col--form input[type="text"]::-moz-placeholder,
+.contactus-block__col--form input[type="email"]::-moz-placeholder,
 .contactus-block__col--form textarea::-moz-placeholder,
 .contactus-block__col--form button::-moz-placeholder {
   color: #8f8e94;
@@ -984,7 +1080,8 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
-.contactus-block__col--form input:-ms-input-placeholder,
+.contactus-block__col--form input[type="text"]:-ms-input-placeholder,
+.contactus-block__col--form input[type="email"]:-ms-input-placeholder,
 .contactus-block__col--form textarea:-ms-input-placeholder,
 .contactus-block__col--form button:-ms-input-placeholder {
   color: #8f8e94;
@@ -992,12 +1089,12 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
-.contactus-block__col--form input {
+.contactus-block__col--form input[type="text"],
+.contactus-block__col--form input[type="email"] {
   padding: 22px 15px;
   line-height: 15px;
 }
 .contactus-block__col--form textarea {
-  margin-bottom: 30px;
   padding: 24px 15px;
   height: 213px;
   line-height: 15px;
@@ -1010,4 +1107,31 @@ header {
   text-align: center;
   letter-spacing: 1px;
   border-radius: 3px;
+}
+.contactus-block__col--form label {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #030303;
+  font-size: 14px;
+  line-height: 15px;
+}
+.contactus-block__summit {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 127px;
+  height: 130px;
+  background-image: url("../images/icons/summit.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.contactus-block__summit:hover {
+  background-position: -127px;
 }

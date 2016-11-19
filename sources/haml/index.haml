@@ -7,10 +7,12 @@
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/bootstrap/css/bootstrap.min.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/creative/creative.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/swiper/swiper.min.css" }
+    %link{ href: "http://vjs.zencdn.net/5.12.6/video-js.css", rel: "stylesheet" }
     %link{ rel: "stylesheet", type: "text/css", href:"./assets/styles/main.css" }
 
     %link{ href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet" }
 
+    %script{ src: "http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js" }
     %script{ src: "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" }
     %script{ src: "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" }
 
@@ -58,16 +60,27 @@
 
         .swiper-slide
           %header.whocan-block#whocan
-            .whocan-block__wrapper.gallery
-              .whocan-block__video.gallery__image.gallery__image--video-cover
+            .whocan-block__wrapper
+              .whocan-block__video
+                .whocan-block__video__turn
+                .whocan-block__video__overlay
+                  .whocan-block__video__play
+                  .whocan-block__video__text{ data-i18n: "participate.watch" }
+                %video.video-js#my-video{ controls: true, preload: "auto", data-setup: "{}", muted: true }
+                  %source{ src: "./assets/video/OIC_2016_720p_2.mp4" }
               .whocan-block__content
                 .whocan-block__content__header{ data-i18n: "participate.header" }
 
                 .swiper-container.whocan-block__content__slides
                   .swiper-wrapper
-                    .swiper-slide{ data-i18n: "participate.slide1" }
-                    .swiper-slide{ data-i18n: "participate.slide2" }
-                    .swiper-slide{ data-i18n: "participate.slide3" }
+                    .swiper-slide
+                      %ul
+                        %li{ data-i18n: "participate.slide1" }
+                        %li{ data-i18n: "participate.slide2" }
+                        %li{ data-i18n: "participate.slide3" }
+                    .swiper-slide
+                      %ul
+                        %li{ data-i18n: "participate.slide4" }
                   .swiper-pagination
         .swiper-slide
           %header.select-participants-block#projectpick
@@ -109,9 +122,9 @@
             .programm-block__wrapper
               .swiper-container.programm-block__photos.programm-block__photos-p2
                 .swiper-wrapper.gallery
-                  .swiper-slide.gallery__image--empty
-                  .swiper-slide.gallery__image--empty
-                  .swiper-slide.gallery__image--empty
+                  .swiper-slide.gallery__image--fourth
+                  .swiper-slide.gallery__image--fifth
+                  .swiper-slide.gallery__image--sixth
                 .swiper-pagination
                 .swiper-button-prev.gallery__prev-btn
                 .swiper-button-next.gallery__next-btn
@@ -186,9 +199,9 @@
                     %b Syed Shahzad
                     Founder and Director General of “Oxademy”.
                 .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/7.png')" }
-                  .trainers-block__person__bio 1111
+                  .trainers-block__person__bio
                 .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/8.png')" }
-                  .trainers-block__person__bio 1111
+                  .trainers-block__person__bio
 
         .swiper-slide
           %header.investors-block
@@ -231,9 +244,9 @@
                     The CEO of “InfoWatch” group.
 
                 .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/7.png')" }
-                  .investors-block__person__bio 111
+                  .investors-block__person__bio
                 .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/8.png')" }
-                  .investors-block__person__bio 1111
+                  .investors-block__person__bio
 
         .swiper-slide
           %header.partners-block
@@ -241,28 +254,29 @@
               .partners-block__header{ data-i18n: "partnership.header" }
               .partners-block__organizers
                 .partners-block__organizers-t{ data-i18n: "partnership.organizers" }
-                %a.partners-block__organizer.partners-block__organizer--minrt{ href: "#", target: "_blank" }
-                %a.partners-block__organizer.partners-block__organizer--icyfdc{ href: "#", target: "_blank" }
-                %a.partners-block__organizer.partners-block__organizer--selet{ href: "#", target: "_blank" }
-                %a.partners-block__organizer.partners-block__organizer--summit{ href: "#", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--minrt{ href: "http://mdms.tatarstan.ru", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--icyfdc{ href: "http://www.icyf-dc.org", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--selet{ href: "http://selet.biz/", target: "_blank" }
+                %a.partners-block__organizer.partners-block__organizer--summit{ href: "http://kazansummit.ru", target: "_blank" }
 
               .partners-block__partners
                 .partners-block__partners-t{ data-i18n: "partnership.partners" }
-                %a.partners-block__partner.partners-block__partner--itpark{ href: "#", target: "_blank" }
-                %a.partners-block__partner.partners-block__partner--oxademy{ href: "#", target: "_blank" }
+                %a.partners-block__partner.partners-block__partner--itpark{ href: "http://itpark-kazan.ru", target: "_blank" }
+                %a.partners-block__partner.partners-block__partner--oxademy{ href: "https://oxademy.ac.uk", target: "_blank" }
 
         .swiper-slide
           %header.contactus-block
             .contactus-block__wrapper
               .contactus-block__header{ data-i18n: "contactus.header" }
               .contactus-block__row
+                %form.contactus-block__col.contactus-block__col--form#contactus-form{ method: "POST" }
+                  %input{ data-i18n: "[placeholder]contactus.placeholder.name", type: "text", name: "name", required: true }
+                  %input{ data-i18n: "[placeholder]contactus.placeholder.mail", name: "email", required: true, type: "email" }
+                  %textarea{ data-i18n: "[placeholder]contactus.placeholder.message", name: "text", required: true }
+                  %input#check{ type: "checkbox", name: "participant", value: "yes" }
+                  %label{ for: "check" } I'm an international participant
+                  %button{ data-i18n: "contactus.send" }
                 .contactus-block__col.contactus-block__col--contacts
-                  %form.contactus-block__col.contactus-block__col--form#contactus-form{ method: "POST", onsubmit: "callF()" }
-                    %input{ data-i18n: "[placeholder]contactus.placeholder.name", name: "name" }
-                    %input{ data-i18n: "[placeholder]contactus.placeholder.mail", name: "mail"}
-                    %textarea{ data-i18n: "[placeholder]contactus.placeholder.message", name: "text"}
-                    %button{ data-i18n: "contactus.send" }
-
                   .contactus-block__col__mails
                     %b{ data-i18n: "contactus.international" }
                     %a{ href: "mailto:kazanforum2016@icyf-dc.org" } kazanforum2016@icyf-dc.org
@@ -272,9 +286,11 @@
                     %b{ data-i18n: "contactus.map" }
                     %a{ href: "#", data-i18n: "contactus.location" }
                 .contactus-block__col.contactus-block__col--social
+                  %b{ data-i18n: "contactus.social" }
                   %a#fb{ href: "#"}
                   %a#vk{ href: "#"}
                   %a#tw{ href: "#"}
+
 
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
       .swiper-button-prev.swiper-button-prev-g
@@ -290,9 +306,9 @@
         %a.overlay-menu__content__link#partnership{ href: "#", data-i18n: "menu.partnership" }
         %a.overlay-menu__content__link#contacts{ href: "#", data-i18n: "menu.contacts" }
 
-
     %script{src: "./vendor/jquery/jquery.min.js"}
     %script{src: "./vendor/bootstrap/js/bootstrap.min.js"}
     %script{src: "./vendor/swiper/swiper.min.js"}
     %script{src: "./vendor/i18next/i18next.js"}
+    %script{src: "http://vjs.zencdn.net/5.12.6/video.js"}
     %script{src: "./assets/js/main.js"}

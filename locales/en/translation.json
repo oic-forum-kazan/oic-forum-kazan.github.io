@@ -11,15 +11,18 @@
 		"contacts":    "CONTACTS"
 	},
 	"main": {
-		"header": "3rd Kazan\nOIC Youth\nEntrepreneurship\nForum",
+		"header": "Third Kazan OIC\nYouth Entrepreneurship\nForum",
 		"date": "15-20 May, 2017",
 		"location": "Kazan, Republic of Tatarstan, Russia"
 	},
 	"participate": {
 		"header": "Who can participate?",
-		"slide1": "You have an IT start-up\nYour age is between 18-35 years",
-		"slide2": "Your start-up has a prototype\nRequired amount of investments is up to 30 000 USD",
-		"slide3": "You are interested in the implementation of your start-up in OIC countries and Russia"
+		"why": "Who participate?",
+		"watch": "WATCH THE INVITATION",
+		"slide1": "You have an IT start-up",
+		"slide2": "Your age is between 18-35 years",
+		"slide3": "Your start-up has a prototype\nRequired amount of investments is up to 30 000 USD",
+		"slide4": "You are interested in the implementation of your start-up in OIC countries and Russia"
 	},
 	"selection": {
 		"header": "Selection Procedure",
@@ -84,9 +87,10 @@
 		"header": "Contact us",
 		"international": "INTERNATIONAL ISSUES",
 		"general": "GENERAL ISSUES",
-		"map": "SHOW ON THE MAP",
+		"map": "Map location",
 		"location": "Kazan, Russian Federation",
 		"send": "SEND MESSAGE",
+		"social": "Find us here",
 		"placeholder": {
 			"name": "Your name and surname",
 			"mail": "your@mail",

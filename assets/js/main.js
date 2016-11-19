@@ -107,11 +107,34 @@ $(function () {
     $('body').i18n();
     $('.lng-switch__current').addClass('lng-switch__current--' + $.i18n.lng());
   });
+  
+  var myPlayer = videojs("my-video");
 
-  window.callF = function () {
-    var msg = $('#contactus-form').serialize();
-    alert(msg);
-  }
+  $('.whocan-block__video__play').click(function () {
+    $('.whocan-block__video__overlay').addClass('whocan-block__video__overlay--hide');
+    $('.whocan-block__video').addClass('whocan-block__video--expanded');
 
+    myPlayer.play();
+  });
+
+  $('.whocan-block__video__turn').click(function () {
+    $('.whocan-block__video__overlay').removeClass('whocan-block__video__overlay--hide');
+    $('.whocan-block__video').removeClass('whocan-block__video--expanded');
+
+    myPlayer.pause();
+  });
+
+
+  $( "form" ).submit(function( e ) {
+    $.ajax({
+      type: "POST",
+      url: "/mail.php",
+      data:  $( this ).serializeArray(),
+      success: function (data) {
+        alert(data);
+      }
+    });
+    e.preventDefault();
+  });
 
 });
