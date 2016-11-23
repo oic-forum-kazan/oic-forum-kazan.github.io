@@ -7,12 +7,12 @@
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/bootstrap/css/bootstrap.min.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/creative/creative.css" }
     %link{ rel: "stylesheet", type: "text/css", href:"./vendor/swiper/swiper.min.css" }
-    %link{ href: "http://vjs.zencdn.net/5.12.6/video-js.css", rel: "stylesheet" }
+    %link{ href: "https://vjs.zencdn.net/5.12.6/video-js.css", rel: "stylesheet" }
     %link{ rel: "stylesheet", type: "text/css", href:"./assets/styles/main.css" }
 
     %link{ href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet" }
 
-    %script{ src: "http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js" }
+    %script{ src: "https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js" }
     %script{ src: "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" }
     %script{ src: "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" }
 
@@ -66,7 +66,7 @@
                 .whocan-block__video__overlay
                   .whocan-block__video__play
                   .whocan-block__video__text{ data-i18n: "participate.watch" }
-                %video.video-js#my-video{ controls: true, preload: "auto", data-setup: "{}", muted: true }
+                %video.video-js#my-video{ controls: true, preload: "auto", data-setup: "{}", poster:"./assets/images/videoposter.png" }
                   %source{ src: "./assets/video/OIC_2016_720p_2.mp4" }
               .whocan-block__content
                 .whocan-block__content__header{ data-i18n: "participate.header" }
@@ -78,10 +78,8 @@
                         %li{ data-i18n: "participate.slide1" }
                         %li{ data-i18n: "participate.slide2" }
                         %li{ data-i18n: "participate.slide3" }
-                    .swiper-slide
-                      %ul
                         %li{ data-i18n: "participate.slide4" }
-                  .swiper-pagination
+                        %li{ data-i18n: "participate.slide5" }
         .swiper-slide
           %header.select-participants-block#projectpick
             .select-participants-block__header{ data-i18n: "selection.header" }
@@ -102,19 +100,22 @@
             .programm-block__wrapper
               .swiper-container.programm-block__photos.programm-block__photos-p1
                 .swiper-wrapper.gallery
-                  .swiper-slide.gallery__image--first
-                  .swiper-slide.gallery__image--second
-                  .swiper-slide.gallery__image--third
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/11.png')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/12.png')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/13.png')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/14.jpg')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/15.jpg')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/16.jpg')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/17.jpg')" }
                 .swiper-pagination
                 .swiper-button-prev.gallery__prev-btn
                 .swiper-button-next.gallery__next-btn
               .programm-block__content
-                .programm-block__content__date{ data-i18n: "firststage.date" }
+                .programm-block__content__fh{ data-i18n: "firststage.fh" }
                 .programm-block__content__part{ data-i18n: "firststage.stage" }
+                .programm-block__content__date{ data-i18n: "firststage.date" }
                 .programm-block__content__header
-                  OIC start up
-                  %br
-                  HUB platform
+                  YOUTH ENTREPRENEURSHIP FORUM
                 .programm-block__content__descr{ data-i18n: "firststage.text" }
 
         .swiper-slide
@@ -122,21 +123,22 @@
             .programm-block__wrapper
               .swiper-container.programm-block__photos.programm-block__photos-p2
                 .swiper-wrapper.gallery
-                  .swiper-slide.gallery__image--fourth
-                  .swiper-slide.gallery__image--fifth
-                  .swiper-slide.gallery__image--sixth
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/21.png')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/22.png')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/23.png')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/24.jpg')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/25.jpg')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/26.jpg')" }
+                  .swiper-slide.gallery__image{ style: "background-image: url('/assets/images/photos/programms/27.jpg')" }
                 .swiper-pagination
                 .swiper-button-prev.gallery__prev-btn
                 .swiper-button-next.gallery__next-btn
               .programm-block__content
-                .programm-block__content__date{ data-i18n: "secondstage.date" }
+                .programm-block__content__fh{ data-i18n: "firststage.fh" }
                 .programm-block__content__part{ data-i18n: "secondstage.stage" }
+                .programm-block__content__date{ data-i18n: "secondstage.date" }
                 .programm-block__content__header
-                  YOUTH
-                  %br
-                  ENTREPRENEURSHIP
-                  %br
-                  FORUM
+                  IT STARTUP EXPO
                 .programm-block__content__descr{ data-i18n: "secondstage.text" }
 
         .swiper-slide
@@ -198,10 +200,14 @@
                   .trainers-block__person__bio
                     %b Syed Shahzad
                     Founder and Director General of “Oxademy”.
-                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/7.png')" }
+                .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/7.jpg')" }
                   .trainers-block__person__bio
+                    %b Muddassar Ahmed
+                    Co-founder of “Unitas Communications”
                 .trainers-block__person{ style: "background-image: url('./assets/images/photos/trainers/8.png')" }
                   .trainers-block__person__bio
+                    %b Ahmet Halit Hatip
+                    Expert at ICYF-DC Secretariat
 
         .swiper-slide
           %header.investors-block
@@ -273,8 +279,6 @@
                   %input{ data-i18n: "[placeholder]contactus.placeholder.name", type: "text", name: "name", required: true }
                   %input{ data-i18n: "[placeholder]contactus.placeholder.mail", name: "email", required: true, type: "email" }
                   %textarea{ data-i18n: "[placeholder]contactus.placeholder.message", name: "text", required: true }
-                  %input#check{ type: "checkbox", name: "participant", value: "yes" }
-                  %label{ for: "check" } I'm an international participant
                   %button{ data-i18n: "contactus.send" }
                 .contactus-block__col.contactus-block__col--contacts
                   .contactus-block__col__mails
@@ -287,9 +291,10 @@
                     %a{ href: "#", data-i18n: "contactus.location" }
                 .contactus-block__col.contactus-block__col--social
                   %b{ data-i18n: "contactus.social" }
-                  %a#fb{ href: "#"}
-                  %a#vk{ href: "#"}
-                  %a#tw{ href: "#"}
+                  %a#fb{ target: "_blank", href: "https://www.facebook.com/KazanYouthForum"}
+                  %a#vk{ target: "_blank", href: "https://vk.com/kazanyouthforum"}
+                  %a#tw{ target: "_blank", href: "https://twitter.com/kazanyouthcamp"}
+                  %a#ins{ target: "_blank", href: "https://www.instagram.com/kazan_youth_forum/"}
 
 
       .swiper-button-next.swiper-button-next-g.swiper-button-next-g--main
@@ -310,5 +315,5 @@
     %script{src: "./vendor/bootstrap/js/bootstrap.min.js"}
     %script{src: "./vendor/swiper/swiper.min.js"}
     %script{src: "./vendor/i18next/i18next.js"}
-    %script{src: "http://vjs.zencdn.net/5.12.6/video.js"}
+    %script{src: "https://vjs.zencdn.net/5.12.6/video.js"}
     %script{src: "./assets/js/main.js"}

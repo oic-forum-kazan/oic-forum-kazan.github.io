@@ -11,8 +11,6 @@ $(function () {
     $('#overlaymenu').css('width', '0%');
   });
 
-  var photoSwipe;
-
   var mainSwiper = new Swiper('.swiper-container-g', {
     simulateTouch: false,
     direction: 'vertical',

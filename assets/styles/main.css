@@ -518,6 +518,9 @@ header {
 .whocan-block__content__slides li {
   white-space: pre-line;
 }
+.whocan-block__content__slides li:empty {
+  list-style-image: none;
+}
 .whocan-block__content__slides .swiper-slide {
   width: 435px;
   color: #030303;
@@ -569,9 +572,13 @@ header {
   padding-left: 30px;
   float: left;
 }
-.programm-block__content__date {
+.programm-block__content__fh {
   font-size: 36px;
   line-height: 49px;
+}
+.programm-block__content__date {
+  font-size: 18px;
+  line-height: 25px;
 }
 .programm-block__content__part {
   display: inline-block;
@@ -586,9 +593,10 @@ header {
 }
 .programm-block__content__descr {
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 27px;
   font-family: 'Roboto';
+  font-weight: normal;
   white-space: pre-line;
 }
 .gallery__image {
@@ -596,24 +604,6 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-}
-.gallery__image--first {
-  background-image: url("../images/photos/programms/1.png");
-}
-.gallery__image--second {
-  background-image: url("../images/photos/programms/2.png");
-}
-.gallery__image--third {
-  background-image: url("../images/photos/programms/3.png");
-}
-.gallery__image--fourth {
-  background-image: url("../images/photos/programms/4.png");
-}
-.gallery__image--fifth {
-  background-image: url("../images/photos/programms/5.png");
-}
-.gallery__image--sixth {
-  background-image: url("../images/photos/programms/6.png");
 }
 .gallery__image--empty {
   background: #fff;
@@ -905,8 +895,11 @@ header {
 }
 .partners-block__organizer--selet {
   width: 120px;
-  background-image: url("../images/icons/selet.png");
+  background-image: url("../images/icons/selet2x.png");
   background-position: 0;
+  -webkit-background-size: 240px;
+  -moz-background-size: 240px;
+  background-size: 240px;
 }
 .partners-block__organizer--selet:hover {
   background-position: -120px;
@@ -926,6 +919,9 @@ header {
   width: 57px;
   background-image: url("../images/icons/itpark.png");
   background-position: 0;
+  -webkit-background-size: 115px;
+  -moz-background-size: 115px;
+  background-size: 115px;
 }
 .partners-block__partner--itpark:hover {
   background-position: -57px;
@@ -962,6 +958,15 @@ header {
 .contactus-block__row {
   margin-top: 40px;
   position: relative;
+  zoom: 1;
+}
+.contactus-block__row:before,
+.contactus-block__row:after {
+  content: "";
+  display: table;
+}
+.contactus-block__row:after {
+  clear: both;
 }
 .contactus-block__col {
   width: 272px;
@@ -1021,6 +1026,13 @@ header {
 .contactus-block__col--social #tw {
   width: 25px;
   background: url("../images/icons/tw.svg") no-repeat center center;
+}
+.contactus-block__col--social #ins {
+  width: 25px;
+  background: url("../images/icons/instagram2x.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
 }
 .contactus-block__col--form {
   position: absolute;
@@ -1100,6 +1112,7 @@ header {
   line-height: 15px;
 }
 .contactus-block__col--form button {
+  margin-top: 30px;
   height: 60px;
   background: #ffa900;
   color: #cd8800;

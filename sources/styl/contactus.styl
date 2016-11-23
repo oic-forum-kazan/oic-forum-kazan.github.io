@@ -18,6 +18,7 @@
   &__row
     margin-top: 40px
     position: relative
+    clearfix()
 
   &__col
     width: 272px
@@ -80,6 +81,11 @@
         width: 25px
         background: url('../images/icons/tw.svg') no-repeat center center
 
+      & #ins
+        width: 25px
+        background: url('../images/icons/instagram2x.png') no-repeat center center
+        background-size: contain
+
     &--form
       position: absolute
       top: 0
@@ -124,6 +130,7 @@
         line-height: 15px
 
       & button
+        margin-top: 30px
         height: 60px
         background: $orange-yellow
         color: $ochre

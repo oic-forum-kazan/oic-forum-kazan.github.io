@@ -11,37 +11,40 @@
 		"contacts":    "CONTACTS"
 	},
 	"main": {
-		"header": "Third Kazan OIC\nYouth Entrepreneurship\nForum",
+		"header": "3-rd Kazan OIC\nYouth Entrepreneurship\nForum",
 		"date": "15-20 May, 2017",
 		"location": "Kazan, Republic of Tatarstan, Russia"
 	},
 	"participate": {
 		"header": "Who can participate?",
 		"why": "Who participate?",
-		"watch": "WATCH THE INVITATION",
-		"slide1": "You have an IT start-up",
-		"slide2": "Your age is between 18-35 years",
-		"slide3": "Your start-up has a prototype\nRequired amount of investments is up to 30 000 USD",
-		"slide4": "You are interested in the implementation of your start-up in OIC countries and Russia"
+		"watch": "SECONDKAZAN OIC YOUTH ENTREPRENEURSHIP FORUM",
+		"slide1": "You have an IT startup;",
+		"slide2": "Your age is between 18-35 years;",
+		"slide3": "Your startup has a prototype;",
+		"slide4": "Required amount of investments is up to 30 000 USD;",
+		"slide5": "You are interested in the implementation of your startup in OIC countries and Russia."
 	},
 	"selection": {
 		"header": "Selection Procedure",
-		"text": "In order to take part in the event you must register on OIC Startup Platform. After registering your start-up, revision and technical selection, you will be assigned to a mentor who will help to refine your projects in order to present them online to the investor.",
+		"text": "In order to take part in the event you must register on OIC Startup Platform. After registering your startup, revision and technical selection, you will be assigned to a mentor who will help to refine your projects in order to present them online to the investor.",
 		"list": {
-			"first": "Registration of the start-up on the platform;",
+			"first": "Registration of the startup on the platform;",
 			"second": "Technical selection and interaction with the assigned mentor;",
 			"third": "Choosing the best projects and invitation by investors to attend the forum in Kazan."
 		}
 	},
 	"firststage": {
+		"fh": "Programme",
 		"date": "15-17 May, 2017",
 		"stage": "FIRST STAGE",
-		"text": "After selection on the OIC Startup Platform top 50 start-ups are invited to take part in the 3rd Kazan OIC Youth Entrepreneurship Forum, where you will find a rich programme that will prepare you for a personal meeting with the investor and the start-up presentation on the pitch session at IT START-UP EXPO."
+		"text": "After selection on the OIC Startup Platform top 50 startups are invited to take part in the 3rd Kazan OIC Youth Entrepreneurship Forum, where you will find a rich programme that will prepare you for a personal meeting with the investor and the startup presentation on the pitch session at IT STARTUP EXPO."
 	},
 	"secondstage": {
+		"fh": "Programme",
 		"date": "18-19 May, 2017",
 		"stage": "SECOND STAGE",
-		"text": "IT START-UP EXPO is an investment session held in the framework of IX International Economic Summit between Russia and OIC countries.\n\nIT START-UP EXPO is the final stage of the 3rd Kazan OIC Youth Entrepreneurship Forum where authors of start-ups make an agreement with interested investors."
+		"text": "IT STARTUP EXPO is an investment session held in the framework of IX International Economic Summit between Russia and OIC countries.\n\nIt is the final stage of the 3rd Kazan OIC Youth Entrepreneurship Forum where authors of startups make an agreement with interested investors."
 	},
 	"implementation": {
 		"header": "IMPLEMENTATION",
@@ -73,10 +76,10 @@
 		"download": "DOWNLOAD THE PROGRAMME"
 	},
 	"trainers": {
-		"header": "Trainers of forum"
+		"header": "Trainers and Mentors"
 	},
 	"investors": {
-		"header": "Investors of forum"
+		"header": "Investors and Partners"
 	},
 	"partnership": {
 		"header": "Partnership",
