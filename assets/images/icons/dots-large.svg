@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768px" height="521px" viewBox="0 0 768 521" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>203E4C61-C21D-40CB-B960-8E75546AD0D1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="1200" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="5,5">
+        <g id="road-map" transform="translate(-182.000000, -282.000000)" stroke="#030303" stroke-width="2">
+            <g id="Group" transform="translate(182.000000, 282.000000)">
+                <path d="M88.0064954,1.22107436 L639.300663,1.22107436 C639.300663,1.22107436 766.103082,1.90001097 766.103082,135.351811 C766.103082,268.80361 639.300663,272.065702 639.300663,272.065702 L129.734414,273.251197 C129.734414,273.251197 1,272.065702 1,398.085467 C1,524.105231 129.734414,519.974185 129.734414,519.974185 L745.601806,519.47402" id="dots" transform="translate(383.551541, 260.605449) rotate(-360.000000) translate(-383.551541, -260.605449) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

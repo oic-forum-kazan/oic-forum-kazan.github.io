@@ -28,17 +28,6 @@ $(function () {
     }
   });
 
-  var photoSwipe = new Swiper('.whocan-block__content__slides', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    direction: 'vertical',
-    simulateTouch: false,
-    autoplay: 5000,
-    paginationBulletRender: function (index, className) {
-      return '<span class="' + className + ' ' + className + '-numeric">' + (index + 1) + '</span>';
-    }
-  });
-
   var programm1Swiper = new Swiper('.programm-block__photos', {
     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',

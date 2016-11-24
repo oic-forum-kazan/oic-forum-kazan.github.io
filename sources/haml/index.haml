@@ -48,7 +48,7 @@
       .swiper-wrapper
         .swiper-slide
           %header.header-block#main
-            .header-block__header{ data-i18n: "main.header" }
+            .header-block__header{ data-i18n: "[html]main.header" }
 
             .header-block__event
               .header-block__event__date{ data-i18n: "main.date" }
@@ -65,21 +65,19 @@
                 .whocan-block__video__turn
                 .whocan-block__video__overlay
                   .whocan-block__video__play
-                  .whocan-block__video__text{ data-i18n: "participate.watch" }
+                  .whocan-block__video__text{ data-i18n: "[html]participate.watch" }
                 %video.video-js#my-video{ controls: true, preload: "auto", data-setup: "{}", poster:"./assets/images/videoposter.png" }
                   %source{ src: "./assets/video/OIC_2016_720p_2.mp4" }
               .whocan-block__content
                 .whocan-block__content__header{ data-i18n: "participate.header" }
 
-                .swiper-container.whocan-block__content__slides
-                  .swiper-wrapper
-                    .swiper-slide
-                      %ul
-                        %li{ data-i18n: "participate.slide1" }
-                        %li{ data-i18n: "participate.slide2" }
-                        %li{ data-i18n: "participate.slide3" }
-                        %li{ data-i18n: "participate.slide4" }
-                        %li{ data-i18n: "participate.slide5" }
+                .whocan-block__content__slides
+                  %ul
+                    %li{ data-i18n: "participate.slide1" }
+                    %li{ data-i18n: "participate.slide2" }
+                    %li{ data-i18n: "participate.slide3" }
+                    %li{ data-i18n: "participate.slide4" }
+                    %li{ data-i18n: "participate.slide5" }
         .swiper-slide
           %header.select-participants-block#projectpick
             .select-participants-block__header{ data-i18n: "selection.header" }
@@ -145,31 +143,37 @@
           %header.implementation-block#implementation
             .implementation-block__wrapper
               .implementation-block__header{ data-i18n: "implementation.header" }
-              .implementation-block__day
-                .implementation-block__current-event{ data-i18n: "implementation.currentevent" }
-                .implementation-block__day__title{ data-i18n: "implementation.event1.title" }
-                .implementation-block__day__date{ data-i18n: "implementation.event1.date" }
+              .implementation-block__roadmap
+                .implementation-block__day.implementation-block__day--first
+                  .implementation-block__day__counter.implementation-block__day__counter--current 1
+                  .implementation-block__day__date{ data-i18n: "implementation.event1.date" }
+                  .implementation-block__day__title{ data-i18n: "implementation.event1.title" }
 
-              .implementation-block__day
-                .implementation-block__day__title{ data-i18n: "implementation.event2.title" }
-                .implementation-block__day__date{ data-i18n: "implementation.event2.date" }
+                .implementation-block__day.implementation-block__day--second
+                  .implementation-block__day__counter 2
+                  .implementation-block__day__date{ data-i18n: "implementation.event2.date" }
+                  .implementation-block__day__title{ data-i18n: "implementation.event2.title" }
 
-              .implementation-block__day
-                .implementation-block__day__title{ data-i18n: "implementation.event3.title" }
-                .implementation-block__day__date{ data-i18n: "implementation.event3.date" }
+                .implementation-block__day.implementation-block__day--third
+                  .implementation-block__day__counter 3
+                  .implementation-block__day__date{ data-i18n: "implementation.event3.date" }
+                  .implementation-block__day__title{ data-i18n: "implementation.event3.title" }
 
-              .implementation-block__day
-                .implementation-block__day__title{ data-i18n: "implementation.event4.title" }
-                .implementation-block__day__date{ data-i18n: "implementation.event4.date" }
+                .implementation-block__day.implementation-block__day--fourth
+                  .implementation-block__day__counter 4
+                  .implementation-block__day__date{ data-i18n: "implementation.event4.date" }
+                  .implementation-block__day__title{ data-i18n: "implementation.event4.title" }
 
-              .implementation-block__day
-                .implementation-block__day__title{ data-i18n: "implementation.event5.title" }
-                .implementation-block__day__date{ data-i18n: "implementation.event5.date" }
+                .implementation-block__day.implementation-block__day--fifth
+                  .implementation-block__day__counter 5
+                  .implementation-block__day__date{ data-i18n: "implementation.event5.date" }
+                  .implementation-block__day__title{ data-i18n: "implementation.event5.title" }
 
-              .implementation-block__day
-                .implementation-block__day__title{ data-i18n: "implementation.event6.title" }
-                .implementation-block__day__date{ data-i18n: "implementation.event6.date" }
-                %a.implementation-block__download{ href: "#", data-i18n: "implementation.download" }
+                .implementation-block__day.implementation-block__day--sixth
+                  .implementation-block__day__counter 6
+                  .implementation-block__day__date{ data-i18n: "implementation.event6.date" }
+                  .implementation-block__day__title{ data-i18n: "implementation.event6.title" }
+                  %a.implementation-block__download{ href: "#", data-i18n: "implementation.download" }
 
         .swiper-slide
           %header.trainers-block
@@ -249,10 +253,14 @@
                     %b Natalya Kaspersky
                     The CEO of “InfoWatch” group.
 
-                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/7.png')" }
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/7.jpg')" }
                   .investors-block__person__bio
-                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/8.png')" }
+                    %b Hossam EL-Din Awad
+                    Chairman of the Youth Committee Business Owner Union
+                .investors-block__person{ style: "background-image: url('./assets/images/photos/investors/8.jpg')" }
                   .investors-block__person__bio
+                    %b Ahmed Galal Eldin Ibrahim
+                    Chairman of the International Business & Investment Association IBIA
 
         .swiper-slide
           %header.partners-block

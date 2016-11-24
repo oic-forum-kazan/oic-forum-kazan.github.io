@@ -6,7 +6,7 @@
   &__wrapper
     position: relative
     left: 50%
-    width: 410px
+    width: 847px
     transform: translateX(-50%)
 
   &__header
@@ -14,36 +14,88 @@
     left: 50%
     transform: translateX(-50%)
     display: inline-block
-    border-bottom: 10px solid $black
+    //border-bottom: 10px solid $black
     color: $black
-    font-size: 18px
-    line-height: 25px
+    font-size: 64px
+    line-height: 89px
+    //font-size: 18px
+    //line-height: 25px
     letter-spacing: 1px
     text-align: center
 
-  &__current-event
-    position: relative
-    display: inline-block
-    left: 50%
-    margin-bottom: 5px
-    width: 140px
-    height: 30px
-    font-size: 14px
-    border-radius(3px)
-    background: $orange-yellow
-    color: $white
-    line-height: 30px
-    text-align: center
-    letter-spacing: 0.5px
-    font-family: 'Roboto'
-    transform: translateX(-50%)
+  //&__current-event
+  //  position: relative
+  //  display: inline-block
+  //  left: 50%
+  //  margin-bottom: 5px
+  //  width: 140px
+  //  height: 30px
+  //  font-size: 14px
+  //  border-radius(3px)
+  //  background: $orange-yellow
+  //  color: $white
+  //  line-height: 30px
+  //  text-align: center
+  //  letter-spacing: 0.5px
+  //  font-family: 'Roboto'
+  //  transform: translateX(-50%)
+  //
+  //&__header
+  //  text-transform: uppercase
 
-  &__current-event,
-  &__header
-    text-transform: uppercase
+  &__roadmap
+    position: relative
+    width: 847px
+    height: 674px
+    background-image: url('../images/icons/dots-large.svg')
+    background-repeat: no-repeat
+    background-position: 30px 30px
 
   &__day
-    margin-top: 25px
+    position: absolute
+    width: 250px
+
+    &--first
+      top: 0
+      left: 0
+      width: 195px
+
+    &--second
+      top: 0
+      left: 373px
+
+    &--third
+      top: 271px
+      left: 480px
+
+    &--fourth
+      top: 271px
+      left: 83px
+
+    &--fifth
+      top: 520px
+      left: 280px
+
+    &--sixth
+      top: 520px
+      left: 650px
+      width: 205px
+
+
+    &__counter
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      width: 60px
+      height: 60px
+      border-radius(30px)
+      background: $black
+      font-size: 36px
+      line-height: 60px
+      text-align: center
+
+      &--current
+        background: $orange-yellow
 
     &__title,
     &__date
@@ -52,6 +104,7 @@
       margin-bottom: 5px
 
     &__title
+      margin-top: 10px
       color: $black
       font-size: 18px
       letter-spacing: 1px
@@ -59,6 +112,7 @@
       white-space: pre-line
 
     &__date
+      margin-top: 20px
       color: $purpley-grey
       font-size: 14px
       letter-spacing: 0.5px
@@ -76,3 +130,14 @@
     line-height: 15px
     text-align: center
 
+
+@media (max-height: 640px)
+  .implementation-block
+    padding-top: 70px
+
+    //&__day
+    //  margin-top: 15px
+    //
+    //  &__title
+    //    font-size: 16px
+    //    line-height: 23px

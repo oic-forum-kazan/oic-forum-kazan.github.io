@@ -109,6 +109,12 @@ header {
 .top-navigation--main .button--header {
   display: none;
 }
+@media (max-height: 640px) {
+  .top-navigation {
+    padding: 10px 30px;
+    height: 70px;
+  }
+}
 .menu-open {
   display: inline-block;
   cursor: pointer;
@@ -210,6 +216,11 @@ header {
   font-weight: bold;
   white-space: pre;
   text-transform: uppercase;
+}
+.header-block__header sup {
+  top: -0.7em;
+  font-size: 0.5em;
+  text-transform: none;
 }
 .header-block__event__date,
 .header-block__event__location {
@@ -313,6 +324,11 @@ header {
 .overlay-menu__content__link:active {
   text-decoration: none;
 }
+@media (max-height: 640px) {
+  .overlay-menu__content__link {
+    margin-top: 25px;
+  }
+}
 .select-participants-block {
   padding-top: 130px;
   background: none;
@@ -390,6 +406,14 @@ header {
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+@media (max-height: 640px) {
+  .select-participants-block {
+    padding-top: 90px;
+  }
+  .select-participants-block__step {
+    margin-top: 25px;
+  }
 }
 .whocan-block {
   padding: 80px 30px 30px 30px;
@@ -500,7 +524,7 @@ header {
 .whocan-block__content {
   padding-left: 30px;
   margin-top: 25px;
-  height: 660px;
+  height: 100%;
   width: 600px;
   float: left;
 }
@@ -517,23 +541,27 @@ header {
 }
 .whocan-block__content__slides li {
   white-space: pre-line;
-}
-.whocan-block__content__slides li:empty {
-  list-style-image: none;
-}
-.whocan-block__content__slides .swiper-slide {
   width: 435px;
   color: #030303;
   font-size: 24px;
   line-height: 34px;
 }
-.whocan-block__content__slides .swiper-pagination {
-  top: 0;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
+.whocan-block__content__slides li:empty {
+  list-style-image: none;
+}
+@media (max-height: 640px) {
+  .whocan-block {
+    padding-top: 70px;
+  }
+  .whocan-block__content__header {
+    margin-top: 0;
+  }
+  .whocan-block__video {
+    height: 550px;
+  }
+  .whocan-block__video__play {
+    margin-top: 225px;
+  }
 }
 .programm-block {
   padding: 80px 30px 30px 30px;
@@ -599,6 +627,21 @@ header {
   font-weight: normal;
   white-space: pre-line;
 }
+@media (max-height: 640px) {
+  .programm-block {
+    padding-top: 70px;
+  }
+  .programm-block__photos {
+    height: 550px;
+  }
+  .programm-block__content {
+    padding-top: 30px;
+  }
+  .programm-block__content__descr {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
 .gallery__image {
   background-position: center center;
   -webkit-background-size: cover;
@@ -630,7 +673,7 @@ header {
 .implementation-block__wrapper {
   position: relative;
   left: 50%;
-  width: 410px;
+  width: 847px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
@@ -646,40 +689,68 @@ header {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   display: inline-block;
-  border-bottom: 10px solid #030303;
   color: #030303;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 64px;
+  line-height: 89px;
   letter-spacing: 1px;
   text-align: center;
 }
-.implementation-block__current-event {
+.implementation-block__roadmap {
   position: relative;
-  display: inline-block;
+  width: 847px;
+  height: 674px;
+  background-image: url("../images/icons/dots-large.svg");
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+}
+.implementation-block__day {
+  position: absolute;
+  width: 250px;
+}
+.implementation-block__day--first {
+  top: 0;
+  left: 0;
+  width: 195px;
+}
+.implementation-block__day--second {
+  top: 0;
+  left: 373px;
+}
+.implementation-block__day--third {
+  top: 271px;
+  left: 480px;
+}
+.implementation-block__day--fourth {
+  top: 271px;
+  left: 83px;
+}
+.implementation-block__day--fifth {
+  top: 520px;
+  left: 280px;
+}
+.implementation-block__day--sixth {
+  top: 520px;
+  left: 650px;
+  width: 205px;
+}
+.implementation-block__day__counter {
+  position: relative;
   left: 50%;
-  margin-bottom: 5px;
-  width: 140px;
-  height: 30px;
-  font-size: 14px;
-  border-radius: 3px;
-  background: #ffa900;
-  color: #fff;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  font-family: 'Roboto';
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #030303;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
 }
-.implementation-block__current-event,
-.implementation-block__header {
-  text-transform: uppercase;
-}
-.implementation-block__day {
-  margin-top: 25px;
+.implementation-block__day__counter--current {
+  background: #ffa900;
 }
 .implementation-block__day__title,
 .implementation-block__day__date {
@@ -688,6 +759,7 @@ header {
   margin-bottom: 5px;
 }
 .implementation-block__day__title {
+  margin-top: 10px;
   color: #030303;
   font-size: 18px;
   letter-spacing: 1px;
@@ -695,6 +767,7 @@ header {
   white-space: pre-line;
 }
 .implementation-block__day__date {
+  margin-top: 20px;
   color: #8f8e94;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -715,6 +788,11 @@ header {
   font-size: 14px;
   line-height: 15px;
   text-align: center;
+}
+@media (max-height: 640px) {
+  .implementation-block {
+    padding-top: 70px;
+  }
 }
 .trainers-block,
 .investors-block {
@@ -792,6 +870,21 @@ header {
 .investors-block__person:hover .investors-block__person__bio {
   display: block;
 }
+@media (max-height: 640px) {
+  .trainers-block,
+  .investors-block {
+    padding-top: 80px;
+  }
+  .trainers-block__header,
+  .investors-block__header {
+    font-size: 64px;
+    line-height: 74px;
+  }
+  .trainers-block__person,
+  .investors-block__person {
+    height: 235px;
+  }
+}
 .partners-block {
   padding: 130px 30px 30px 30px;
   font-family: 'Roboto';
@@ -812,6 +905,7 @@ header {
   line-height: 85px;
   color: #030303;
   text-align: center;
+  font-weight: bold;
 }
 .partners-block__organizers {
   margin-top: 34px;
@@ -933,6 +1027,11 @@ header {
 }
 .partners-block__partner--oxademy:hover {
   background-position: -279px;
+}
+@media (max-height: 640px) {
+  .partners-block {
+    padding-top: 90px;
+  }
 }
 .contactus-block {
   padding: 130px 30px 30px 30px;
@@ -1147,4 +1246,24 @@ header {
 }
 .contactus-block__summit:hover {
   background-position: -127px;
+}
+@media (max-height: 640px) {
+  .contactus-block {
+    padding-top: 90px;
+  }
+  .contactus-block__row {
+    margin-top: 20px;
+  }
+  .contactus-block__col--form input[type="text"],
+  .contactus-block__col--form input[type="email"],
+  .contactus-block__col--form button {
+    margin-bottom: 15px;
+  }
+  .contactus-block__col--form textarea {
+    height: 203px;
+  }
+  .contactus-block__col--form button {
+    margin-top: 25px;
+    line-height: 50px;
+  }
 }

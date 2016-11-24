@@ -11,18 +11,18 @@
 		"contacts":    "CONTACTS"
 	},
 	"main": {
-		"header": "3-rd Kazan OIC\nYouth Entrepreneurship\nForum",
+		"header": "3<sup>rd</sup> Kazan OIC\nYouth Entrepreneurship\nForum",
 		"date": "15-20 May, 2017",
 		"location": "Kazan, Republic of Tatarstan, Russia"
 	},
 	"participate": {
 		"header": "Who can participate?",
 		"why": "Who participate?",
-		"watch": "SECONDKAZAN OIC YOUTH ENTREPRENEURSHIP FORUM",
-		"slide1": "You have an IT startup;",
-		"slide2": "Your age is between 18-35 years;",
-		"slide3": "Your startup has a prototype;",
-		"slide4": "Required amount of investments is up to 30 000 USD;",
+		"watch": "2<sup>nd</sup> KAZAN OIC YOUTH ENTREPRENEURSHIP FORUM",
+		"slide1": "You have an IT startup",
+		"slide2": "Your age is between 18-35 years",
+		"slide3": "Your startup has a prototype",
+		"slide4": "Required amount of investments is up to 30 000 USD",
 		"slide5": "You are interested in the implementation of your startup in OIC countries and Russia."
 	},
 	"selection": {
@@ -47,8 +47,7 @@
 		"text": "IT STARTUP EXPO is an investment session held in the framework of IX International Economic Summit between Russia and OIC countries.\n\nIt is the final stage of the 3rd Kazan OIC Youth Entrepreneurship Forum where authors of startups make an agreement with interested investors."
 	},
 	"implementation": {
-		"header": "IMPLEMENTATION",
-		"currentevent": "CURRENT",
+		"header": "Road map",
 		"event1": {
 			"title": "Open call and registration on the platform",
 			"date": "20 November – 20 January"
