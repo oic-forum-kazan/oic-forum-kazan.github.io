@@ -49,28 +49,23 @@ $(function () {
     $('.overlay-menu__closebtn').trigger('click');
   });
 
-  $('#project').click(function () {
-    mainSwiper.slideTo(2);
-    $('.overlay-menu__closebtn').trigger('click');
-  });
-
   $('#trainers').click(function () {
-    mainSwiper.slideTo(6);
+    mainSwiper.slideTo(5);
     $('.overlay-menu__closebtn').trigger('click');
   });
 
   $('#investors').click(function () {
-    mainSwiper.slideTo(7);
+    mainSwiper.slideTo(6);
     $('.overlay-menu__closebtn').trigger('click');
   });
 
   $('#partnership').click(function () {
-    mainSwiper.slideTo(8);
+    mainSwiper.slideTo(7);
     $('.overlay-menu__closebtn').trigger('click');
   });
 
   $('#contacts').click(function () {
-    mainSwiper.slideTo(9);
+    mainSwiper.slideTo(8);
     $('.overlay-menu__closebtn').trigger('click');
   });
 

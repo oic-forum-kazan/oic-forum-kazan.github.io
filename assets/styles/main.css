@@ -109,7 +109,7 @@ header {
 .top-navigation--main .button--header {
   display: none;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .top-navigation {
     padding: 10px 30px;
     height: 70px;
@@ -324,7 +324,7 @@ header {
 .overlay-menu__content__link:active {
   text-decoration: none;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .overlay-menu__content__link {
     margin-top: 25px;
   }
@@ -407,7 +407,7 @@ header {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .select-participants-block {
     padding-top: 90px;
   }
@@ -549,7 +549,7 @@ header {
 .whocan-block__content__slides li:empty {
   list-style-image: none;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .whocan-block {
     padding-top: 70px;
   }
@@ -627,7 +627,7 @@ header {
   font-weight: normal;
   white-space: pre-line;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .programm-block {
     padding-top: 70px;
   }
@@ -789,9 +789,61 @@ header {
   line-height: 15px;
   text-align: center;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .implementation-block {
     padding-top: 70px;
+  }
+  .implementation-block__wrapper {
+    width: 580px;
+  }
+  .implementation-block__roadmap {
+    width: 580px;
+    height: 474px;
+    background-position: 30px 20px;
+    -webkit-background-size: 510px 330px;
+    -moz-background-size: 510px 330px;
+    background-size: 510px 330px;
+  }
+  .implementation-block__day__date {
+    margin-top: 15px;
+  }
+  .implementation-block__day__counter {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 30px;
+  }
+  .implementation-block__day__title {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .implementation-block__day--first {
+    left: 5px;
+    width: 205px;
+  }
+  .implementation-block__day--second {
+    left: 273px;
+  }
+  .implementation-block__day--third {
+    top: 166px;
+    left: 350px;
+  }
+  .implementation-block__day--fourth {
+    top: 171px;
+    left: 43px;
+    width: 300px;
+    font-size: 20px;
+  }
+  .implementation-block__day--fifth {
+    top: 330px;
+    left: 150px;
+  }
+  .implementation-block__day--sixth {
+    top: 330px;
+    left: 410px;
+    width: 205px;
   }
 }
 .trainers-block,
@@ -870,7 +922,7 @@ header {
 .investors-block__person:hover .investors-block__person__bio {
   display: block;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .trainers-block,
   .investors-block {
     padding-top: 80px;
@@ -1028,7 +1080,7 @@ header {
 .partners-block__partner--oxademy:hover {
   background-position: -279px;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .partners-block {
     padding-top: 90px;
   }
@@ -1247,7 +1299,7 @@ header {
 .contactus-block__summit:hover {
   background-position: -127px;
 }
-@media (max-height: 640px) {
+@media (max-height: 670px) {
   .contactus-block {
     padding-top: 90px;
   }

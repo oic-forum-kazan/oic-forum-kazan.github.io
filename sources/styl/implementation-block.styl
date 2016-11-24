@@ -14,34 +14,11 @@
     left: 50%
     transform: translateX(-50%)
     display: inline-block
-    //border-bottom: 10px solid $black
     color: $black
     font-size: 64px
     line-height: 89px
-    //font-size: 18px
-    //line-height: 25px
     letter-spacing: 1px
     text-align: center
-
-  //&__current-event
-  //  position: relative
-  //  display: inline-block
-  //  left: 50%
-  //  margin-bottom: 5px
-  //  width: 140px
-  //  height: 30px
-  //  font-size: 14px
-  //  border-radius(3px)
-  //  background: $orange-yellow
-  //  color: $white
-  //  line-height: 30px
-  //  text-align: center
-  //  letter-spacing: 0.5px
-  //  font-family: 'Roboto'
-  //  transform: translateX(-50%)
-  //
-  //&__header
-  //  text-transform: uppercase
 
   &__roadmap
     position: relative
@@ -131,13 +108,58 @@
     text-align: center
 
 
-@media (max-height: 640px)
+@media (max-height: 670px)
   .implementation-block
     padding-top: 70px
 
-    //&__day
-    //  margin-top: 15px
-    //
-    //  &__title
-    //    font-size: 16px
-    //    line-height: 23px
+    &__wrapper
+      width: 580px
+
+    &__roadmap
+      width: 580px
+      height: 474px
+      background-position: 30px 20px
+      background-size: 510px 330px
+
+    &__day
+      &__date
+        margin-top: 15px
+
+      &__counter
+        height: 40px
+        width: 40px
+        border-radius(20px)
+        line-height: 40px
+        font-size: 30px
+
+      &__title
+        margin-top: 10px
+        font-size: 14px
+        line-height: 18px
+
+      &--first
+        left: 5px
+        width: 205px
+
+      &--second
+        left: 273px
+
+      &--third
+        top: 166px
+        left: 350px
+
+      &--fourth
+        top: 171px
+        left: 43px
+        width: 300px
+        font-size: 20px
+
+      &--fifth
+        top: 330px
+        left: 150px
+
+      &--sixth
+        top: 330px
+        left: 410px
+        width: 205px
+
