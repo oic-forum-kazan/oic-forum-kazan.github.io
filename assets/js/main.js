@@ -49,6 +49,11 @@ $(function () {
     $('.overlay-menu__closebtn').trigger('click');
   });
 
+  $('#roadmap').click(function () {
+    mainSwiper.slideTo(4);
+    $('.overlay-menu__closebtn').trigger('click');
+  });
+
   $('#trainers').click(function () {
     mainSwiper.slideTo(5);
     $('.overlay-menu__closebtn').trigger('click');
